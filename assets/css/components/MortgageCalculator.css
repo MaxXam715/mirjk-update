@@ -1,0 +1,695 @@
+.G-section-mortgage {
+    margin-top: 100px;
+}
+
+.G-section-mortgage .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.G-section-mortgage .title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.G-section-mortgage .mortgage-row {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 64px;
+    width: 100%;
+}
+
+.G-section-mortgage .left-side {
+    display: none;
+    position: relative;
+    width: 32.3%;
+    max-width: 540px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.G-section-mortgage .left-side .heading {
+    margin-bottom: 32px;
+}
+
+.G-section-mortgage .left-side .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 0 0 16px;
+}
+
+.G-section-mortgage .left-side .amount {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #696969;
+}
+
+.G-section-mortgage .left-side .amount span {
+    color: #0047B0;
+}
+
+.G-section-mortgage .left-side .steps-wrapper .steps {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
+}
+
+.G-section-mortgage .left-side .step {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 92px;
+}
+
+.G-section-mortgage .left-side .step .step-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.G-section-mortgage .left-side .step .text {
+    margin-left: 24px;
+}
+
+.G-section-mortgage .left-side .step .text .step-order {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 0 0 4px;
+}
+
+.G-section-mortgage .left-side .step .text .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    color: #696969;
+}
+
+.G-section-mortgage .left-side .apply-btn-wrapper {
+    display: none;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #f6f6f6;
+}
+
+.G-section-mortgage .left-side .apply {
+    width: 100%;
+}
+
+.G-section-mortgage .right-side {
+    width: auto;
+    flex-grow: 1;
+    padding: 32px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.G-section-mortgage .right-side .calculator-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    grid-gap: 64px;
+}
+
+.G-section-mortgage .right-side .calc {
+    width: 50%;
+}
+
+.G-section-mortgage .calc-row {
+    margin-bottom: 24px;
+}
+
+.G-section-mortgage .right-side .calc-row:last-child {
+    margin-bottom: 0;
+}
+
+
+.G-section-mortgage .calc-row .input-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    padding-right: 16px;
+
+
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #000000;
+    position: relative;
+}
+
+.G-section-mortgage .calc-row .input-row .symbol {
+    right: 16px;
+    display: inline-block;
+}
+
+.G-section-mortgage .right-side .calc-row .head {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #696969;
+    white-space: nowrap;
+
+    margin-left: auto;
+}
+
+.G-section-mortgage .calc .calc_inp {
+    width: auto;
+    max-width: 35%;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+
+.G-section-mortgage .calc .ui-widget.ui-widget-content {
+    border: 2px solid #B3B3B3;
+    margin-top: -2px;
+}
+
+.G-section-mortgage .ui-widget.ui-widget-content::after {
+    background-color: transparent;
+}
+
+.G-section-mortgage .ui-state-default {
+    background: #0047B0;
+    top: -4px;
+    border: none;
+    width: 12px;
+    height: 12px;
+}
+
+.G-section-mortgage .ui-slider-horizontal .ui-slider-handle {
+    top: -3px;
+    margin-left: -6px;
+}
+
+.G-section-mortgage .ui-slider .ui-slider-handle {
+    z-index: 1;
+    border: none;
+    background-color: #0047B0;
+    width: 12px;
+    height: 12px;
+}
+
+.G-section-mortgage .ui-slider-horizontal .ui-slider-range {
+    height: 2px;
+    background-color: #0047B0;
+}
+
+.G-section-mortgage .ui-state-default {
+    cursor: pointer;
+}
+
+.G-section-mortgage .ui-slider-range {
+    top: 0px;
+    border: none !important;
+}
+
+.G-section-mortgage .calc-row .quick-pick-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.G-section-mortgage .calc-row .quick-pick-row .pick-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px 12px;
+    background-color: #f6f6f6;
+    border-radius: 64px;
+
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.G-section-mortgage .calc-row .quick-pick-row .pick-item:hover,
+.G-section-mortgage .calc-row .quick-pick-row .pick-item.active {
+    background-color: #3D81DA;
+    color: #FFFFFF;
+}
+
+.G-section-mortgage .calc-res-wrapper {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding-left: 64px;*/
+}
+
+.G-section-mortgage .calc-res-wrapper .calc-res {
+    max-width: 538px;
+}
+
+.G-section-mortgage .calc-res-wrapper .res-item-wrapper {
+    margin-bottom: 44px;
+}
+
+.G-section-mortgage .calc-res-wrapper .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 0 0 20px;
+}
+
+.G-section-mortgage .calc-res-wrapper .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.G-section-mortgage .calc-res-wrapper .cnt.month-pay {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: 0.04em;
+    color: #3D81DA;
+    white-space: nowrap;
+
+}
+
+.G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+
+}
+
+.G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row .res-item-wrapper {
+    margin-bottom: 0;
+}
+
+.G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row .subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #696969;
+    margin-bottom: 8px;
+}
+
+.G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row .cnt {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.G-section-mortgage .calc-res-wrapper .cnt .label {
+
+}
+
+.G-section-mortgage .calc-res-wrapper .btn {
+    margin-top: 44px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 1550px) {
+    .G-section-mortgage .title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .G-section-mortgage .mortgage-row {
+        grid-column-gap: 32px;
+    }
+
+    .G-section-mortgage .left-side {
+        width: 27.44%;
+    }
+
+    .G-section-mortgage .left-side .step {
+        height: 80px;
+    }
+
+    .G-section-mortgage .left-side .step .text .description {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+    .G-section-mortgage .right-side .calculator-wrapper {
+        align-items: flex-start;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .subtitle {
+        margin-bottom: 4px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .G-section-mortgage .title {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .G-section-mortgage .mortgage-row {
+        grid-column-gap: 0;
+        grid-row-gap: 28px;
+        flex-direction: column;
+    }
+
+    .G-section-mortgage .left-side {
+        width: 100%;
+        max-width: none;
+    }
+
+    .G-section-mortgage .left-side .heading {
+        margin-bottom: 20px;
+    }
+
+    .G-section-mortgage .left-side .title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .G-section-mortgage .left-side .steps-wrapper {
+
+    }
+
+    .G-section-mortgage .left-side .steps-wrapper .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row {
+        width: calc(50% - 8px);
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row:nth-child(1) {
+        order: 1;
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row:nth-child(2) {
+        order: 3;
+        margin-bottom: 0;
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row:nth-child(3) {
+        order: 2;
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row:nth-child(4) {
+        order: 4;
+    }
+
+    .G-section-mortgage .right-side .calculator-wrapper {
+        flex-direction: column;
+        grid-gap: 0;
+    }
+
+    .G-section-mortgage .right-side .calc {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .G-section-mortgage .calc-res-wrapper {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+
+    .G-section-mortgage .right-side .calc-res {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: none;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column-gap: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .res-item-wrapper {
+        margin-bottom: 0;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .subtitle {
+        font-size: 12px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .btn {
+        max-width: 295px;
+        max-height: 38px;
+        padding: 12px 20px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .G-section-mortgage {
+        margin-top: 50px;
+    }
+
+    .G-section-mortgage .left-side {
+        margin-left: -30px;
+        padding-left: 30px;
+        margin-right: -30px;
+        padding-right: 30px;
+        width: calc(100% + 60px);
+    }
+
+    .G-section-mortgage .left-side .steps-wrapper {
+        overflow: hidden;
+        margin-left: -30px;
+        padding-left: 30px;
+        margin-right: -30px;
+        padding-right: 30px;
+        width: calc(100% + 60px);
+    }
+
+    .G-section-mortgage .left-side .steps-wrapper .steps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0 30px 10px;
+        margin: 0 -30px -10px;
+    }
+
+    .G-section-mortgage .left-side .steps-wrapper .step {
+        flex: 1 0 auto;
+    }
+
+    .G-section-mortgage .right-side .calc {
+        flex-direction: column;
+        grid-row-gap: 24px;
+    }
+
+    .G-section-mortgage .right-side .calc-row {
+        margin-bottom: 0;
+    }
+
+    .G-section-mortgage .right-side .calc .calc-row {
+
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: calc(100% + 32px);
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .G-section-mortgage .calc .calc_inp {
+        max-width: 40%;
+    }
+
+
+    .G-section-mortgage .calc-row .quick-pick-row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        margin-bottom: -17px;
+
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: calc(100% + 32px);
+    }
+
+    .G-section-mortgage .right-side .calc-res {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .res-item-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row {
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .G-section-mortgage {
+        background-color: #f6f6f6;
+
+        margin-top: 60px;
+        /*padding-top: 24px;*/
+        padding-bottom: 24px;
+    }
+
+    .G-section-mortgage .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .G-section-mortgage .container-wrapper {
+        background-color: #f6f6f6;
+        padding: 0 16px;
+    }
+
+    .G-section-mortgage .title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .G-section-mortgage .right-side {
+        padding: 0;
+        background-color: #f6f6f6;
+    }
+
+    .G-section-mortgage .right-side .calculator-wrapper {
+        display: unset;
+    }
+
+    .G-section-mortgage .calc-row .input-row .calc_inp,
+    .G-section-mortgage .calc-row .input-row {
+        background-color: #FFFFFF;
+    }
+
+    .G-section-mortgage .calc-row .quick-pick-row .pick-item {
+        background-color: #FFFFFF;
+    }
+
+    .G-section-mortgage .calc-res-wrapper {
+        position: relative;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper:before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 4px;
+        width: calc(100% + 40px);
+        background-color: #f6f6f6;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .res-item-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .cnt.month-pay {
+        font-size: 32px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 12px;
+        align-items: flex-end;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .G-section-mortgage .calc-res-wrapper .calc-res-wrapper-row .cnt {
+        font-size: 14px;
+    }
+
+
+    .G-section-mortgage .calc-res-wrapper .btn {
+        max-width: 100%;
+        padding: 16px 20px;
+        font-size: 14px;
+        max-height: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .G-section-mortgage .calc-row .quick-pick-row {
+        margin-bottom: -22px;
+    }
+}

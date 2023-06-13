@@ -1,0 +1,159 @@
+#topDiv {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+#topDiv .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 30px;
+}
+
+#topDiv .logotype {
+    display: flex;
+    margin-right: 75px;
+}
+
+#topDiv .logotype img {
+    width: auto;
+    height: 38px;
+}
+
+@media screen and (max-width: 600px) {
+    #topDiv .logotype img {
+        width: auto;
+        height: 32px;
+    }
+}
+
+#topDiv .content .topBar {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+#topMenu {
+    width: 50%;
+    margin: 0 auto;
+    /* margin: 0; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#topMenu li {
+    margin-right: 45px;
+}
+
+#topMenu li:last-child {
+    margin-right: 0px;
+}
+
+#topMenu li.closeTopMenu {
+    display: none
+}
+
+#topMenu li a {
+    font-size: 14px;
+    color: #000;
+    padding: 5px 0;
+    white-space: nowrap;
+    transition: color 200ms ease;
+}
+
+#topMenu li a.active {
+    color: var(--orange);
+}
+
+#topMenu li a:hover {
+    color: var(--orange);
+}
+
+#topBar {
+    cursor: pointer;
+    display: none;
+    /*padding: 0 10px;*/
+}
+
+.topBar {
+    width: 18px;
+    height: 16px;
+
+}
+
+.topBar .line {
+    /*transform: translate(-50%, -50%);*/
+    width: 18px;
+}
+
+.topBar .line:before,
+.topBar .line:after,
+.topBar .line div {
+    background: #000000;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.topBar .line:before {
+    margin-top: 0;
+}
+
+.topBar .line:after {
+    margin-bottom: 0;
+}
+
+.topBar.active .line:before {
+    transform: translateY(7px) rotate(135deg);
+}
+
+.topBar.active .line:after {
+    transform: translateY(-7px) rotate(-135deg);
+}
+
+.topBar.active .line div {
+    transform: scale(0);
+}
+
+#topMenuBar {
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    padding: 50px 30px;
+    transform-origin: 0% 0%;
+    transform: translate(-120%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    z-index: 100;
+    border-radius: 0 0 10px 10px;
+    color: #000;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #topMenuBar {
+        top: 48px;
+    }
+}
+
+#topMenuBar.active {
+    left: 0;
+    transform: none;
+}
+
+#topMenuBar li {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#topMenuBar li:last-child {
+    margin-bottom: 0px;
+}
+
+#topMenuBar li a {
+    color: #000
+}

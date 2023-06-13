@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+
+    mask-size: contain;
+    -webkit-mask-size: contain;
+
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+
+    mask-position: center;
+    -webkit-mask-position: center;
+
+    font-size: 16px;
+    background-color: #000;
+}
+
+.icon.close-modal {
+    mask-image: url(icon-close-modal.svg);
+    -webkit-mask-image: url(icon-close-modal.svg);
+}
+
+.icon.sortArrow {
+    mask-image: url(sortArrow.svg);
+    -webkit-mask-image: url(sortArrow.svg);
+}
+
+.icon.map {
+    mask-image: url(map.svg);
+    -webkit-mask-image: url(map.svg);
+}
+
+.icon.pen {
+    mask-image: url(pen.svg);
+    -webkit-mask-image: url(pen.svg);
+}
+
+.icon.setting {
+    mask-image: url(setting.svg);
+    -webkit-mask-image: url(setting.svg);
+}
+
+.icon.check {
+    mask-image: url(check.svg);
+    -webkit-mask-image: url(check.svg);
+}
+
+.icon.arrow-left {
+    mask-image: url(arrow-left.svg);
+    -webkit-mask-image: url(arrow-left.svg);
+}
+
+.icon.arrow-left-fat {
+    mask-image: url(arrow-left-fat.svg);
+    -webkit-mask-image: url(arrow-left-fat.svg);
+}
+
+.icon.arrow-right {
+    mask-image: url(arrow-right.svg);
+    -webkit-mask-image: url(arrow-right.svg);
+}
+
+.icon.arrow-right-fat {
+    mask-image: url(arrow-right-fat.svg);
+    -webkit-mask-image: url(arrow-right-fat.svg);
+}
+
+.icon.row-right {
+    mask-image: url(row-right.svg);
+    -webkit-mask-image: url(row-right.svg);
+}
+
+.icon.arrow-left-row {
+    mask-image: url(arrow-left-row.svg);
+    -webkit-mask-image: url(arrow-left-row.svg);
+}
+
+.icon.arrow-right-row {
+    mask-image: url(arrow-right-row.svg);
+    -webkit-mask-image: url(arrow-right-row.svg);
+}
+
+.icon.arrow-down {
+    mask-image: url(arrow-down.svg);
+    -webkit-mask-image: url(arrow-down.svg);
+}
+
+.icon.key {
+    mask-image: url(key.svg);
+    -webkit-mask-image: url(key.svg);
+}
+
+.icon.percent {
+    mask-image: url(percent.svg);
+    -webkit-mask-image: url(percent.svg);
+}
+
+.icon.caret-up {
+    mask-image: url(caret-up.svg);
+    -webkit-mask-image: url(caret-up.svg);
+}
+
+.icon.caret-down {
+    mask-image: url(caret-down.svg);
+    -webkit-mask-image: url(caret-down.svg);
+}
+
+.icon.aero {
+    mask-image: url(aero.svg);
+    -webkit-mask-image: url(aero.svg);
+}
+
+.icon.plus {
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+
+.icon.minus {
+    mask-image: url(minus.svg);
+    -webkit-mask-image: url(minus.svg);
+}
+
+.icon.close {
+    mask-image: url(close.svg);
+    -webkit-mask-image: url(close.svg);
+}
+
+.icon.close-smooth {
+    mask-image: url(close-smooth.svg);
+    -webkit-mask-image: url(close-smooth.svg);
+}
+
+.icon.walking-people {
+    mask-image: url(walking-people.svg);
+    -webkit-mask-image: url(walking-people.svg);
+}
+
+.icon.location {
+    mask-image: url(location.svg);
+    -webkit-mask-image: url(location.svg);
+}
+
+.icon.location-icon {
+    mask-image: url(location.svg);
+    -webkit-mask-image: url(location.svg);
+}
+
+.icon.cross {
+    mask-image: url(cross.svg);
+    -webkit-mask-image: url(cross.svg);
+}
+
+.icon.individual {
+    mask-image: url(individual.svg);
+    -webkit-mask-image: url(individual.svg);
+}
+
+.icon.metro-icon {
+    mask-image: url(metro.svg);
+    -webkit-mask-image: url(metro.svg);
+}
+
+.icon.mob-filter {
+    mask-image: url(mob-filter-icon.svg);
+    -webkit-mask-image: url(mob-filter-icon.svg);
+}
+
+.icon.mob-map {
+    mask-image: url(mob-icon-map.svg);
+    -webkit-mask-image: url(mob-icon-map.svg);
+}
+
+.icon.list {
+    mask-image: url(list.svg);
+    -webkit-mask-image: url(list.svg);
+}
+
+.icon.gallery {
+    mask-image: url(gallery.svg);
+    -webkit-mask-image: url(gallery.svg);
+}

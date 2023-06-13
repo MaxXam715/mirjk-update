@@ -1,0 +1,28 @@
+.G-flex {
+  display: flex;
+}
+
+.G-flex.G-flex-v-star {
+  align-items: flex-start;
+}
+
+.G-flex.G-flex-v-end {
+  align-items: flex-end;
+}
+
+.G-flex.G-flex-v-center {
+  align-items: center;
+}
+
+.G-flex.G-flex-g-center {
+  justify-content: center;
+}
+
+.G-flex.G-flex-g-sp {
+  justify-content: space-between;
+}
+
+.G-flex.G-flex-vg-center {
+  align-items: center;
+  justify-content: center;
+}
