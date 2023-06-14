@@ -1,0 +1,15 @@
+@import "/assets/css/components/G-flat-list.css";
+
+.P-section-flats .items {
+    grid-gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .P-section-flats .content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}

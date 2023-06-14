@@ -61,7 +61,7 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "mirjk.ru") !==
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/static/favicon.svg">
-    <link rel="icon" href="/static/favicon.svg?v=1.032">
+    <link rel="icon" href="/static/<? echo ($_SERVER['HTTP_HOST'] == 'mirjk-update') ? 'faviconDev.svg' : 'favicon.svg' ?>?v=1.03124">
     <link rel="apple-touch-icon" href="/static/favicon.svg">
     <link rel="mask-icon" href="/static/favicon.svg">
 
