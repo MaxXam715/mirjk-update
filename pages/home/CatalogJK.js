@@ -21,11 +21,4 @@ function getTopJks() {
         filter: {top: 1, verified: 1},
         container: $(".P-cards-jk-wrapper")
     });
-
-    var width = $(window).width();
-    if (width <= 600) {
-        $(".items_jk").addClass("fotorama");
-        fotoramaLoad();
-    }
-
 }

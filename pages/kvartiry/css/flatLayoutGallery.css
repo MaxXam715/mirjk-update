@@ -1,0 +1,181 @@
+.P-flat-card .flat-container .left-side {
+    display: flex;
+    flex-grow: 1;
+    grid-column-gap: 24px;
+}
+
+.P-flat-card .flat-container .left-side .flat-gallery-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.P-flat-card .flat-container .splide-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.P-flat-card .flat-container .splide-wrapper .splide__track  {
+    height: 100%;
+}
+
+.P-flat-card .flat-container .splide-wrapper .splide__slide .slide-photo {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
+    aspect-ratio: 1/1;
+    margin: auto;
+    width: 50%;
+    object-fit: contain;
+}
+
+.P-flat-card .slider-arrows {
+    position: absolute;
+    bottom: 50%;
+    left: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: calc(100% - 64px);
+    transform: translateY(50%);
+    justify-content: space-between;
+}
+
+.P-flat-card .splide__arrow {
+    position: unset;
+    width: 56px;
+    height: 56px;
+    opacity: 1;
+    transform: none;
+
+    background: #3D81DA;
+    backdrop-filter: blur(6px);
+    transition: opacity 0.3s ease;
+}
+
+.P-flat-card .splide__arrow:disabled {
+    /*opacity: 0.3;*/
+    background: rgba(61, 129, 218, 0.3);
+    cursor: default;
+}
+
+.P-flat-card .splide__arrow:hover:not(:disabled) {
+    opacity: 1;
+}
+
+.P-flat-card .splide__arrow.splide__arrow--next .icon {
+    margin-left: 2px;
+}
+
+.P-flat-card .splide__arrow .icon {
+    font-size: 14px;
+    background-color: #FFFAFA;
+}
+
+.P-flat-card .splide__pagination  {
+    bottom: 13px;
+}
+
+.P-flat-card .splide__pagination__page {
+    margin: 4px;
+}
+
+.P-flat-card .splide__pagination__page.is-active {
+    background-color: #3D81DA;
+    opacity: 1;
+    border-radius: 3px;
+    transform: scale(2, 1.5);
+
+}
+
+@media screen and (max-width: 1450px) {
+    .P-flat-card .flat-container .left-side .gallery-wrapper {
+        justify-content: space-between;
+        max-width: 256px;
+        min-width: 180px;
+    }
+
+    .P-flat-card .flat-container .splide-wrapper .splide__slide:first-child {
+        display: flex;
+    }
+
+    .P-flat-card .flat-container .splide-wrapper .splide__slide .slide-photo {
+        aspect-ratio: 47 / 40;
+    }
+
+    .P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
+        width: 80%;
+    }
+
+    .P-flat-card .slider-arrows {
+        left: 24px;
+        right: 24px;
+        width: calc(100% - 48px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1150px) {
+    .P-flat-card .flat-container .left-side {
+        display: flex;
+        grid-column-gap: 24px;
+        max-height: 418px;
+    }
+
+    .P-flat-card .flat-container .left-side .flat-gallery-wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    .P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .P-flat-card .flat-container .left-side {
+        grid-row-gap: 12px;
+        max-height: none;
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
+        width: 80%;
+    }
+
+    .P-flat-card .flat-container .left-side .flat-gallery-wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    .P-flat-card .splide__pagination {
+        bottom: 5px;
+    }
+
+    .P-flat-card .splide__pagination__page {
+        margin: 3px;
+    }
+
+    .P-flat-card .splide__pagination__page.is-active {
+        transform: scale(1.5, 1);
+    }
+}

@@ -1,0 +1,288 @@
+.P-flat-card .flat-container .right-side {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 32px;
+    padding-bottom: 29px;
+    display: flex;
+    max-width: 535px;
+    min-width: 528px;
+    flex-grow: 1;
+}
+
+.P-flat-card .flat-container .right-side .flat-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .title-flat {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.29;
+    color: #000000;
+
+    margin-bottom: 30px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .title-flat a {
+    color: var(--blue);
+}
+
+.P-flat-card .flat-container .right-side .flat-about .address-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-gap: 16px;
+
+    letter-spacing: 1px;
+    margin-bottom: 27px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .address .location {
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-gap: 4px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .address-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 8px;
+    margin-bottom: 24px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .advantages .advantage-item {
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    padding: 8px 12px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #000000;
+    user-select: none;
+    letter-spacing: 0.01px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .price-wrapper {
+    margin-bottom: 22px;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .flat-features {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
+
+    transition: max-height 0.35s ease-in-out;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .flat-features .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.04em;
+    color: #696969;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .flat-features .item:nth-child(4) ~ .item {
+    display: none;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .flat-features.active .item:nth-child(4) ~ .item {
+    display: flex;
+}
+
+
+.P-flat-card .flat-container .right-side .flat-about .flat-features .item .value {
+    color: #000000;
+}
+
+.P-flat-card .flat-container .right-side .show-all {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    color: var(--blue);
+    margin-top: 27px;
+    margin-bottom: 24px;
+
+    transition: color 0.3s ease;
+}
+
+.P-flat-card .flat-container .right-side .show-all:hover {
+    color: var(--blue);
+}
+
+.P-flat-card .flat-container .right-side .show-all .icon {
+    margin-left: 15px;
+    background-color: var(--blue);
+}
+
+.P-flat-card .flat-container .right-side .flat-about .phone {
+    margin-top: auto;
+}
+
+.P-flat-card .flat-container .right-side .flat-about .phone .btn {
+    width: 100%;
+    height: 52px;
+}
+
+@media screen and (max-width: 1500px) {
+    .P-flat-card .flat-container .price-wrapper .full-price {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .P-flat-card .flat-container .right-side {
+        max-width: 528px;
+        min-width: 40%;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .phone .btn {
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .P-flat-card .flat-container .right-side {
+        padding: 20px;
+
+        max-width: none;
+        min-width: 0;
+        flex-grow: 1;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about {
+        width: 100%;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .title-flat {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .title-flat br {
+        display: none;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .flat-features {
+        grid-row-gap: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .P-flat-card .flat-container .right-side .flat-about .title-flat {
+        margin-bottom: 25px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address-row {
+        margin-bottom: 20px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address .location {
+        grid-gap: 1px;
+        letter-spacing: 0.01px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address .location .metro,
+    .P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro {
+        font-size: 12px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address .location .icon.metro-icon,
+    .P-flat-card .flat-container .right-side .flat-about .address .location .icon.walking-people {
+        font-size: 15px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro {
+        margin-left: 12px;
+    }
+
+
+    .P-flat-card .flat-container .price-wrapper .full-price {
+        font-size: 20px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .price-wrapper {
+        margin-bottom: 7px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .advantages {
+        margin-bottom: 20px;
+    }
+    .P-flat-card .flat-container .right-side .show-all {
+        margin-top: 22px;
+        margin-bottom: 26px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .phone .btn {
+        letter-spacing: 1px;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .P-flat-card .flat-container .right-side {
+        padding: 20px;
+
+        max-width: none;
+        min-width: 0;
+        flex-grow: 1;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about {
+
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .title-flat br {
+        display: none;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .address .location .metro,
+    .P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro {
+        font-size: 14px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .price-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .P-flat-card .flat-container .price-wrapper .full-price {
+        letter-spacing: 0.01px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-mortgage {
+        font-size: 12px;
+    }
+
+
+    .P-flat-card .flat-container .right-side .flat-about .flat-features {
+        grid-row-gap: 12px;
+    }
+
+    .P-flat-card .flat-container .right-side .flat-about .phone .btn {
+        height: 40px;
+    }
+}

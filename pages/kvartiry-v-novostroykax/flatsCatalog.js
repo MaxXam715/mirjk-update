@@ -110,8 +110,6 @@ function JkFlatTmplPlaneta(data) {
             }
         }
 
-
-
         room_txt = (place['rooms'] > 0) ? place['rooms'] + "-комнатная" : "Студия";
         room_txt_url = (place['rooms'] > 0) ? place['rooms'] + "-komnatnaya" : "studiya";
         place_url = '/novostroyki/' + jk.seo_title + '/kvartiry/' + room_txt_url + '-' + place.allSquare + 'm-' + place.floor + '-etaj-' + place['id'];
@@ -123,7 +121,7 @@ function JkFlatTmplPlaneta(data) {
                 <div class="main-photos">
                     <div class="photo-item">
 <!--                        <img src="https://mirjk.planetarf.ru/uploads/mirjk/places/${place.layout}" alt="">-->
-                        <img src="https://92.img.avito.st/640x480/5782415492.jpg" alt="">
+                        <img src="https://media.samolet.ru/flat/plan/c6492e69-03fe-ec11-b823-005056b8a72c.svg" alt="">
                     </div>
                 </div>
                 <div class="bottom-photos">
@@ -145,7 +143,8 @@ function JkFlatTmplPlaneta(data) {
                     <h3 class="title">${brand.title}</h3>
                 </div>
                 <!--      только на планшете-->
-                <div class="info-header href" target="blank" href="${place_url}">${room_txt} кв., ${place.allSquare} м², ${place['floor']}/${place['h_floor']} этаж </div>
+<!--                <a class="info-header href" href="${place_url}" target="blank">${room_txt} кв., ${place.allSquare} м², ${place['floor']}/${place['h_floor']} этаж </a>-->
+                <a class="info-header href" href="/kvartiry" target="blank">${room_txt} кв., ${place.allSquare} м², ${place['floor']}/${place['h_floor']} этаж </a>
                 <div class="subtitle">
 <!--                      За кв метр, класс, дата сдачи  -->
                     ${jkMinAttrTmpl(jk)}
