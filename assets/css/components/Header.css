@@ -15,7 +15,6 @@
     transform: translateY(-100%);
 }
 
-
 .G-header .wrapper-container {
     display: flex;
     align-items: center;
@@ -60,7 +59,6 @@
 .G-header .menu-nav .menu-list .list-item:hover .link {
     color: var(--blue);
 }
-
 
 .G-header .burger {
     display: none;
@@ -109,6 +107,7 @@
     position: absolute;
     left: 0;
     bottom: var(--bar-spacing);
+
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 

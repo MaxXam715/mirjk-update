@@ -605,7 +605,7 @@
 }
 
 /*Start  Стилизация фильтра для страницы КАРТА*/
-.filter-new.map-filter .filter-title{
+.filter-new.map-filter .filter-title {
     display: none;
 }
 
@@ -801,7 +801,7 @@
     z-index: 0;
 }
 
-.filter-new.map-filter .popup-filters .container-body{
+.filter-new.map-filter .popup-filters .container-body {
     position: relative;
     margin: auto;
     width: 680px;
@@ -859,7 +859,7 @@
 }
 
 .filter-new.map-filter .popup-filters .select-wrapper,
-.filter-new.map-filter .popup-filters .square-wrapper{
+.filter-new.map-filter .popup-filters .square-wrapper {
     display: unset;
     width: 100%;
 }
@@ -873,7 +873,7 @@
     justify-content: flex-end;
 }
 
-.filter-new.map-filter .popup-filters .input-from-to-wrapper.to .input-from-to.to{
+.filter-new.map-filter .popup-filters .input-from-to-wrapper.to .input-from-to.to {
     width: 20%;
     margin-left: 5px;
 }
@@ -896,10 +896,8 @@
 /*END   Стили для попапа ЕЩЕ ФИЛЬТРЫ*/
 
 
-
 @media screen and (min-width: 1221px) {
     /*START   Стилизация фильтра для страницы КАРТА*/
-
     /*Вариант когда кнопка раздвигается при наведении непосредственно на нее*/
     .filter-new.map-filter .filter-buttons .draw:hover,
     .filter-new.map-filter .filter-buttons .draw.active,
@@ -926,7 +924,7 @@
     }
 
     .filter-new.map-filter .filter-buttons .draw.active .icon.pen {
-    background-color: #FFFFFF;
+        background-color: #FFFFFF;
     }
 
     /*Вариант когда все кнопки раздвигается одновременно при наведении на область кнопок*/
@@ -935,18 +933,14 @@
     /*.filter-new.map-filter .filter-buttons:hover .clean-filter {*/
     /*    width: 235px;*/
     /*}*/
-
     /*.filter-new.map-filter .filter-buttons:hover .draw .text,*/
     /*.filter-new.map-filter .filter-buttons:hover .to-flats-list .text,*/
     /*.filter-new.map-filter .filter-buttons:hover .clean-filter .text {*/
     /*    width: 100%;*/
-
     /*    padding-left: 10px;*/
     /*}*/
-
     /*END   Стилизация фильтра для страницы КАРТА*/
 }
-
 
 
 @media screen and (max-width: 1600px) {
@@ -1029,6 +1023,7 @@
         width: 44px;
         padding: 0;
     }
+
     .filter-new.map-filter .open-filters .text {
         display: none;
     }
@@ -1101,12 +1096,11 @@
 
 @media screen and (max-width: 1220px) {
     /*START  Стилизация фильтра для страницы КАРТА*/
-
     .filter-new.map-filter .filter__form {
         /*display: none;*/
     }
 
-    .filter-new.map-filter .filter-buttons>.btn,
+    .filter-new.map-filter .filter-buttons > .btn,
     .filter-new.map-filter .filter-buttons .clean-filter {
         width: fit-content;
         display: none;
@@ -1114,7 +1108,7 @@
 
     .filter-new.map-filter .filter-buttons .draw .text,
     .filter-new.map-filter .filter-buttons .to-flats-list .text,
-    .filter-new.map-filter .filter-buttons .clean-filter .text{
+    .filter-new.map-filter .filter-buttons .clean-filter .text {
         width: auto;
         margin-left: 10px;
     }
@@ -1196,8 +1190,6 @@
         padding: 0;
     }
 
-
-
     .filter-new.map-filter .filter-buttons {
         margin-top: auto;
         margin-bottom: 10px;
@@ -1276,8 +1268,6 @@
 
     /*END  Стилизация фильтра для страницы КАРТА*/
 }
-
-
 
 @media screen and (max-width: 1100px) {
     .filter-new .filter-title {
@@ -1385,7 +1375,7 @@
         padding: 16px;
         opacity: 0;
         /*transform: translateY(-100%);*/
-pointer-events: none;
+        pointer-events: none;
         transition: top 0.8s ease, opacity 0.3s ease;
     }
 
@@ -1409,7 +1399,7 @@ pointer-events: none;
     .filter-new.home-filter.active {
         top: 65px;
         height: calc(100vh - 65px);
-        opacity: 1 ;
+        opacity: 1;
     }
 
     .filter-new .heading-mob,
@@ -1513,7 +1503,6 @@ pointer-events: none;
     }
 
 
-
     .filter-new.map-filter {
         left: -100vw;
         top: 65px;
@@ -1566,7 +1555,6 @@ pointer-events: none;
     /*.filter-new.active {*/
     /*    top: 55px;*/
     /*}*/
-
     .filter-new.more-filters.map-filter .filter-buttons .btn.toMap,
     .filter-new.more-filters.map-filter .filter-buttons .btn.to-flats-list {
         display: none;
@@ -1617,5 +1605,4 @@ pointer-events: none;
     .filter-new .filter-buttons .btn:not(:first-child) {
         margin-left: 0;
     }
-
 }
