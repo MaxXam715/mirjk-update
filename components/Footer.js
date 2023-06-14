@@ -4,14 +4,16 @@ function FooterMain() {
         <div class="G-container">
             <ul class="links-list">
                 <li><a href="/kvartiry-v-novostroykax">Новостройки</a></li>
-                <li><a href="">Ипотека</a></li>
+<!--                <li><a href="">Ипотека</a></li>-->
                 <li><a href="/novostroyki-na-karte">Объекты на карте</a></li>
-                <li><a href="/">Услуги</a></li>
-                <li><a href="/">Застройщики</a></li>
+                <li><a href="/novostroyki">Жилые комплексы</a></li>
+                <li><a href="/blog-posts">Блог</a></li>
+<!--                <li><a href="/">Услуги</a></li>-->
+<!--                <li><a href="/">Застройщики</a></li>-->
 <!--                <li><a href="/novostroyki">Жилые Комплексы</a></li>-->
-                <li><a href="/blog-posts">Новости</a></li>
-                <li><a href="/">Видео обзоры</a></li>
-                <li><a href="/">Контакты</a></li>
+<!--                <li><a href="/blog-posts">Новости</a></li>-->
+<!--                <li><a href="/">Видео обзоры</a></li>-->
+<!--                <li><a href="/">Контакты</a></li>-->
 <!--                <li><a  href="/kontakty">Реклама на сайте</a></li>-->
 <!--                <li><a  href="/policy">Политика конфиденциальности</a></li>-->
             </ul>

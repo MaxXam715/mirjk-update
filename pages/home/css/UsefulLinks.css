@@ -55,7 +55,7 @@
     margin-top: auto;
 }
 
-.P-section-helpful-links .compilation .icon-mob {
+.P-section-helpful-links .compilation .icon.flats {
     display: none;
 }
 
@@ -222,7 +222,7 @@
     font-size: 14px;
 }
 
-.P-section-helpful-links .to-flat-card .icon-mob {
+.P-section-helpful-links .to-flat-card .icon {
     display: none;
 }
 
@@ -468,11 +468,11 @@
         line-height: 1.57;
     }
 
-    .P-section-helpful-links .compilation .icon-mob {
+    .P-section-helpful-links .compilation .icon.flats {
         display: inline-block;
         margin-top: auto;
-        width: 40px;
-        height: 40px;
+        background-color: #FFFFFF;
+        font-size: 40px;
     }
 
     .P-section-helpful-links .compilation .title br,
@@ -515,11 +515,15 @@
         display: none;
     }
 
-    .P-section-helpful-links .to-flat-card .icon-mob {
+    .P-section-helpful-links .to-flat-card .icon {
         display: inline-block;
-        width: 40px;
-        height: 40px;
         margin-top: auto;
+        background-color: var(--blue);
+        font-size: 40px;
+    }
+
+    .P-section-helpful-links .to-flat-card .icon.metro-big {
+        font-size: 50px;
     }
 
     .P-section-helpful-links .to-map {

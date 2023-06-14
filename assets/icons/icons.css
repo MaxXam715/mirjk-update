@@ -182,3 +182,28 @@
     mask-image: url(gallery.svg);
     -webkit-mask-image: url(gallery.svg);
 }
+
+.icon.house {
+    mask-image: url(house.svg);
+    -webkit-mask-image: url(house.svg);
+}
+
+.icon.map-points {
+    mask-image: url(map-points.svg);
+    -webkit-mask-image: url(map-points.svg);
+}
+
+.icon.metro-big {
+    mask-image: url(metro-big.svg);
+    -webkit-mask-image: url(metro-big.svg);
+}
+
+.icon.flats {
+    mask-image: url(flats.svg);
+    -webkit-mask-image: url(flats.svg);
+}
+
+.icon.percent-big {
+    mask-image: url(percent-big.svg);
+    -webkit-mask-image: url(percent-big.svg);
+}

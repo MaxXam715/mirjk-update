@@ -1,30 +1,48 @@
 function HeaderMain() {
     var html = `
-    <header id="topDiv" class="header">
-        <div class="content">
-            <!-- Лого -->
-            <a href="/" class="logotype"><img src="/assets/img/logotype.svg"></a>
-            <!-- Меню -->
-            <ul id="topMenu">
-                <li><a href="/kvartiry-v-novostroykax">Квартиры в новостройках</a></li>
-                <li><a href="/novostroyki">Жилые Комплексы</a></li>
-                <li><a href="/novostroyki-na-karte">Новостройки на карте</a></li>
-                <li><a href="/blog-posts">Ипотека</a></li>
-                <li><a href="/blog-posts">Блог</a></li>
-            </ul>
-    
-            <!-- Кнопка Моб. меню -->
-            <div id="topBar" class="topBar js-toogle-nav" style="display: none;">
-                <div class="line">
-                    <div></div>
-                </div>
+    <section class="G-header header">
+        <div class="G-container">
+            <div class="wrapper-container">
+                <a href="/" class="logo"><img src="/assets/img/logotype.svg" alt="" class="logo-image"></a>
+                <nav class="menu-nav">
+                    <ul class="menu-list">
+                        <li class="list-item"><a href="/kvartiry-v-novostroykax" class="link">Квартиры в новостройках</a>
+                        </li>
+                        <li class="list-item"><a href="/novostroyki" class="link">Жилые Комплексы</a></li>
+                        <li class="list-item"><a href="/novostroyki-na-karte" class="link">Новостройки на карте</a></li>
+                        <li class="list-item"><a href="/blog-posts" class="link">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="burger js-burger"><span class="line"></span></div>
             </div>
-    
         </div>
-        <div id="topMenuBar">
-            <ul></ul>
-        </div>
-    </header>`;
+    </section>`;
     html = $(html);
     $('#app').before(html);
+
+    //Показать скрыть меню при скролле
+    hideShowHeader()
+
+    //открытие закрытие меню по клику на бургер
+    $('.G-header .burger').on('click', function () {
+        $(this).toggleClass('active')
+        $('.G-header').toggleClass('active')
+        $('body').toggleClass('no-scroll')
+    });
+}
+
+function hideShowHeader() {
+    const $header = $(".G-header")
+    let lastScroll = 0;
+
+    $(window).scroll(function() {
+        const hidePosition = 50;
+
+        if (window.scrollY > hidePosition && window.scrollY > lastScroll) {
+            $header.addClass('hidden')
+        } else {
+            $header.removeClass('hidden')
+        }
+        lastScroll = window.scrollY;
+    })
 }

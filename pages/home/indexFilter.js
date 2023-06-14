@@ -2,11 +2,10 @@ import SearchFilter from '/components/SearchFilter.js';
 
 export default function indexFilter() {
     var html = `
-    <section id="map_sec">
+    <section id="map_sec" class="banner">
         <!-- blur баннера -->
-        <div id="map_jpg">
+        <div id="map_jpg" class="banner-bg">
             <img src="/assets/img/filter_banner-2.jpg" alt="">
-            <div id="opacMainBanner"></div>
         </div>
     
         <!-- Контент -->
@@ -16,11 +15,11 @@ export default function indexFilter() {
     
             <div class="big-buttons">
                 <a href="/novostroyki-na-karte" type="button" class="item open-map">
-                    <img src="/assets/img/home-open-map.svg" alt="Open">
+                    <i class="icon map-points"></i>
                     <span>Показать на карте</span>
                 </a>
                 <button type="button" class="item  js-open-filter">
-                    <img src="/assets/img/home-open-filter.svg" alt="Open">
+                    <i class="icon house"></i>
                     <span>Найти квартиру</span>
                 </button>
             </div>

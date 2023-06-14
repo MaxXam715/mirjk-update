@@ -166,8 +166,16 @@ export default function SearchFilter(data) {
     $(data.append).append(html);
 
 
-    var filter_metro = 0;
+    // Поставить снять
+    html.find('.input-wrapper.rooms .checkbox-label input').click(function () {
+        if ($(this).is(':checked')) {
+            $(this).closest('.checkbox-label').addClass('selected')
+        } else {
+            $(this).closest('.checkbox-label').removeClass('selected')
+        }
+    });
 
+    var filter_metro = 0;
     html.find('.open-filters').click(function () {
         html.find('.popup-filters').addClass('active');
         $('body').addClass('no-scroll');

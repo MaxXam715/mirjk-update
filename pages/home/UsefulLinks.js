@@ -9,7 +9,8 @@ export default function UsefulLinks() {
                     <p class="description">Посмотрите подборку новых новостроек, которые сданы в&nbsp;2022 году и те,
                         которые будут в&nbsp;сдаче в&nbsp;2023 году</p>
                     <button type="button" class="btn helpful-btn btn--white">Смотреть</button>
-                    <img src="/assets/img/compilation-mob.svg" alt="" class="icon-mob">
+                    <i class="icon flats"></i>
+<!--                    <img src="/assets/img/compilation-mob.svg" alt="" class="icon-mob">-->
                 </div>
                 <div class="choose-flats">
                     <h4 class="title">Выберите квартиру</h4>
@@ -53,19 +54,22 @@ export default function UsefulLinks() {
                     <h3 class="title">Квартиры рядом с&nbsp;метро <br>от&nbsp;40 000 ₽</h3>
                     <p class="description">Подборка квартир рядом с&nbsp;метро с&nbsp;ипотечным платежом от 40 000 ₽</p>
                     <button type="button" class="helpful-btn btn btn--blue">Смотреть</button>
-                    <img src="/assets/img/card-metro-mob.svg" alt="" class="metro icon-mob">
+                    <i class="icon metro-big"></i>
+<!--                    <img src="/assets/img/card-metro-mob.svg" alt="" class="metro icon-mob">-->
                 </div>
                 <div class="to-flat-card">
                     <h3 class="title">1-комнатные квартиры <br>в&nbsp;Новой Москве</h3>
                     <p class="description">Подборка 1-комнатных квартир в&nbsp;Новой Москве</p>
                     <button type="button" class="helpful-btn btn btn--blue">Смотреть</button>
-                    <img src="/assets/img/card-flats-mob.svg" alt="" class="icon-mob">
+                    <i class="icon flats"></i>
+<!--                    <img src="/assets/img/card-flats-mob.svg" alt="" class="icon-mob">-->
                 </div>
                 <div class="to-flat-card card-mortgage">
                     <h3 class="title">Ипотека от 0.01 %</h3>
                     <p class="description">Подборка квартир с ипотекой от&nbsp;0.01&nbsp;%</p>
                     <button type="button" class="helpful-btn btn btn--blue">Смотреть</button>
-                    <img src="/assets/img/card-percent-mob.svg" alt="" class="icon-mob">
+                    <i class="icon percent-big"></i>
+<!--                    <img src="/assets/img/card-percent-mob.svg" alt="" class="icon-mob">-->
                 </div>
     
             </div>
