@@ -128,13 +128,13 @@ function JkFlatTmplPlaneta(data) {
                 </div>
                 <div class="bottom-photos">
                     <div class="photo-item">
-                        <img src="/images/flat-bottom-photo.jpg" alt="">
+                        <img src="/assets/img/flat-bottom-photo.jpg" alt="">
                     </div>
                     <div class="photo-item">
-                        <img src="/images/flat-bottom-photo.jpg" alt="">
+                        <img src="/assets/img/flat-bottom-photo.jpg" alt="">
                     </div>
                     <div class="photo-item">
-                        <img src="/images/flat-bottom-photo.jpg" alt="">
+                        <img src="/assets/img/flat-bottom-photo.jpg" alt="">
                     </div>
                 </div>
             </div>

@@ -299,11 +299,13 @@ function toggleMobFilter() {
     $('.js-open-filter').click(function () {
         $('.filter-new').addClass('active');
         $('body').addClass('no-scroll');
+        $(this).closest('.banner').css('z-index','11')
     });
 
     $('.js-close').click(function () {
         $('.filter-new').removeClass('active');
-        $('body').removeClass('no-scroll')
+        $('body').removeClass('no-scroll');
+        $(this).closest('.banner').css('z-index','unset')
     });
 }
 

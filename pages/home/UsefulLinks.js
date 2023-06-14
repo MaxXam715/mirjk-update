@@ -16,24 +16,29 @@ export default function UsefulLinks() {
                     <h4 class="title">Выберите квартиру</h4>
                     <ul class="flats-list">
                         <li class="list-item">
-                            <a href="#" class="link">Студии</a>
-                            <span class="count-offers"><span class="count">242</span> предложений</span>
+                            <a href="#" class="link">Студии
+                                <span class="count-offers">242 предложений</span>
+                            </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="link">1-комнатные</a>
-                            <span class="count-offers"><span class="count">1312</span> предложений</span>
+                            <a href="#" class="link">1-комнатные
+                                <span class="count-offers">1312 предложений</span>
+                            </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="link">2-комнатные</a>
-                            <span class="count-offers"><span class="count">484</span> предложений</span>
+                            <a href="#" class="link">2-комнатные
+                                <span class="count-offers">484 предложений</span>
+                            </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="link">3-комнатные</a>
-                            <span class="count-offers"><span class="count">540</span> предложений</span>
+                            <a href="#" class="link">3-комнатные
+                                <span class="count-offers">540 предложений</span>
+                            </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="link">4-комнатные</a>
-                            <span class="count-offers"><span class="count">45</span> предложений</span>
+                            <a href="#" class="link">4-комнатные
+                                <span class="count-offers">45 предложений</span>
+                            </a>
                         </li>
     
                     </ul>

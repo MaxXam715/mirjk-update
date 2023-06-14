@@ -2,9 +2,9 @@ import SearchFilter from '/components/SearchFilter.js';
 
 export default function indexFilter() {
     var html = `
-    <section id="map_sec" class="banner">
+    <section class="banner">
         <!-- blur баннера -->
-        <div id="map_jpg" class="banner-bg">
+        <div class="banner-bg">
             <img src="/assets/img/filter_banner-2.jpg" alt="">
         </div>
     
@@ -48,4 +48,6 @@ export default function indexFilter() {
     $("#app").append(html);
 
     SearchFilter({append: '#max_123123'});
+
+    
 }

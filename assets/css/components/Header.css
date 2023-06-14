@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .G-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -9,6 +9,7 @@
     transition: all 1s ease;
 
     background: #ffffff;
+
 }
 
 .G-header.hidden {
@@ -16,9 +17,11 @@
 }
 
 .G-header .wrapper-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     padding: 22px 0;
 }
 
@@ -38,6 +41,7 @@
 
 .G-header .menu-nav .menu-list {
     display: flex;
+    align-items: center;
     grid-column-gap: 40px;
 }
 

@@ -27,4 +27,5 @@ function getTopJks() {
         $(".items_jk").addClass("fotorama");
         fotoramaLoad();
     }
+
 }

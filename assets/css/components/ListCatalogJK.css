@@ -14,7 +14,7 @@
 
 .G-card-jk .photo-container {
     overflow: hidden;
-
+    flex-grow: 1;
 }
 
 .G-card-jk .photo-container .photo-link {
@@ -23,6 +23,7 @@
 
 .G-card-jk .photo-container .img-wrapper {
     /*height: 260px;*/
+    height: 100%;
     display: flex;
 }
 
@@ -273,6 +274,17 @@
     color: #696969;
 
     margin-bottom: 12px;
+
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    box-orient: vertical;
 }
 
 .G-card-jk .jk-info .info-footer .indicators {

@@ -1,6 +1,6 @@
 function HeaderMain() {
     var html = `
-    <section class="G-header header">
+    <header class="G-header header">
         <div class="G-container">
             <div class="wrapper-container">
                 <a href="/" class="logo"><img src="/assets/img/logotype.svg" alt="" class="logo-image"></a>
@@ -10,13 +10,14 @@ function HeaderMain() {
                         </li>
                         <li class="list-item"><a href="/novostroyki" class="link">Жилые Комплексы</a></li>
                         <li class="list-item"><a href="/novostroyki-na-karte" class="link">Новостройки на карте</a></li>
-                        <li class="list-item"><a href="/blog-posts" class="link">Блог</a></li>
+<!--                        <li class="list-item"><a href="/blog-posts" class="link">Блог</a></li>-->
                     </ul>
                 </nav>
+                <div class="special"></div>
                 <div class="burger js-burger"><span class="line"></span></div>
             </div>
         </div>
-    </section>`;
+    </header>`;
     html = $(html);
     $('#app').before(html);
 
@@ -37,6 +38,12 @@ function hideShowHeader() {
 
     $(window).scroll(function() {
         const hidePosition = 50;
+
+        if (window.scrollY > hidePosition) {
+            $header.css('box-shadow','0 4px 24px rgba(0, 0, 0, 0.08)')
+        } else {
+            $header.css('box-shadow', 'none')
+        }
 
         if (window.scrollY > hidePosition && window.scrollY > lastScroll) {
             $header.addClass('hidden')

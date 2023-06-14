@@ -76,9 +76,6 @@
 }
 
 .P-section-helpful-links .choose-flats .list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     margin-bottom: 6px;
 
@@ -93,6 +90,10 @@
 }
 
 .P-section-helpful-links .choose-flats .list-item .link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     color: #0047B0;
     opacity: 0.6;
     transition: opacity 0.2s ease;
