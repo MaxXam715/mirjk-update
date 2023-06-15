@@ -34,8 +34,12 @@ export default function similarJK() {
         perMove: 1,
         gap: 24,
         breakpoints: {
+            1200: {
+                perPage: 2
+            },
             1024: {
                 gap: 16,
+                perPage:1
             },
             600: {
                 gap: 8,
