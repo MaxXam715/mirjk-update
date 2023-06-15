@@ -8,12 +8,16 @@
 @import url("/plugins/uikit/uikit.min.css");      /* UIKit */
 @import url("/assets/css/uikit.css");             /* mirjk UI-kit */
 @import url("/assets/css/reset.css");             /* reset CSS */
+@import url("/plugins/Modal/modal.css");             /* modal */
 
 body {
   min-height: calc(var(--vh, 1vh) * 100);
   overflow-y: overlay;
   overflow-x: hidden !important;
   background-color: #F6F6F6;
+
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 /* скелетон заглушка для img */

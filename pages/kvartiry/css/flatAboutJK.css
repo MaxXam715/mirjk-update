@@ -93,11 +93,6 @@
     display: none;
 }
 
-/*.P-about-slider .content {*/
-/*    max-width: none;*/
-/*    overflow: hidden;*/
-/*}*/
-
 .P-about-slider .slider-wrapper {
     position: relative;
     border-radius: 20px;
@@ -419,6 +414,11 @@
 /* ----------------------------------*/
 /* Стили для переключателей, появляющихся только на мобильной версии*/
 @media screen and (max-width: 700px) {
+    .G-about-jk .G-container {
+        padding: 0;
+    }
+
+
     .P-tab-slider {
         display: flex;
         overflow-y: hidden;

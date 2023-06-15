@@ -6,15 +6,17 @@ export default function flatLayoutGallery() {
                 <div class="splide__track ">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img data-fancybox="gallery" src="http://mirjk/images/flat-layout.png" alt="img" class="slide-photo">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/flat-layout.png" alt="img" class="slide-photo">
                         </li>
                         <li class="splide__slide">
                             <img data-fancybox="gallery" src="https://sportishka.com/uploads/posts/2022-11/1667522638_1-sportishka-com-p-zal-dizain-krasivo-1.jpg" alt="img" class="slide-photo">
                         </li>
                     </ul>
                 </div>
-                <div class="splide__arrows slider-arrows">
+                <div class="splide__arrows slider-arrows left">
                     <button class="splide__arrow splide__arrow--prev" type="button"><i class="icon arrow-left"></i></button>
+                </div>
+                <div class="splide__arrows slider-arrows right">
                     <button class="splide__arrow splide__arrow--next" type="button"><i class="icon arrow-right"></i></button>
                 </div>
             </div>

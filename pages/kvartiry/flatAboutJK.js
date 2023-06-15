@@ -1,3 +1,9 @@
+$.ajax({ // modal
+    async: false,
+    url: "/plugins/Modal/modal.js?v="+version,
+    dataType: "script"
+});
+
 export default function flatAboutJK() {
     var html = `
     <section class="G-about-jk">
@@ -39,7 +45,7 @@ export default function flatAboutJK() {
                         <div class="features-items">
                             <div class="item" data-slider="landscaping">
                                 <div class="img-wrapper">
-                                    <img src="http://mirjk/images/about-jk-features-3.jpg" alt="">
+                                    <img src="https://mirjk.ru/images/about-jk-features-3.jpg" alt="">
                                 </div>
                                 <div class="info">
                                     <h4 class="heading">Благоустройство</h4>
@@ -48,7 +54,7 @@ export default function flatAboutJK() {
                             </div>
                             <div class="item" data-slider="entry-group">
                                 <div class="img-wrapper">
-                                    <img src="http://mirjk/images/about-jk-features-5.jpg" alt="">
+                                    <img src="https://mirjk.ru/images/about-jk-features-5.jpg" alt="">
                                 </div>
                                 <div class="info">
                                     <h4 class="heading">Входная группа</h4>
@@ -57,7 +63,7 @@ export default function flatAboutJK() {
                             </div>
                             <div class="item" data-slider="day-views">
                                 <div class="img-wrapper">
-                                    <img src="http://mirjk/images/about-jk-features-1.jpg" alt="">
+                                    <img src="https://mirjk.ru/images/about-jk-features-1.jpg" alt="">
                                 </div>
                                 <div class="info">
                                     <h4 class="heading">Дневные виды</h4>
@@ -66,7 +72,7 @@ export default function flatAboutJK() {
                             </div>
                             <div class="item" data-slider="architecture">
                                 <div class="img-wrapper">
-                                    <img src="http://mirjk/images/about-jk-features-4.jpg" alt="">
+                                    <img src="https://mirjk.ru/images/about-jk-features-4.jpg" alt="">
                                 </div>
                                 <div class="info">
                                     <h4 class="heading">Архитектура</h4>
@@ -96,13 +102,12 @@ export default function flatAboutJK() {
     html = $(html);
     $('#app').append(html);
 
-    // выводим данные через ТАБЫ
+    // выводим данные через ТАБЫ в моб.
     html.find('.P-tab-slider .btn').click(function () {
         let selectedTab = $(this).data('tab'),
             nameTab = $(this).text();
 
         $(this).closest('.features').find('.container-slider').html('');
-
         sliderInfoJk_mob({
             title: nameTab,
             className: 'slider-123',
@@ -140,56 +145,70 @@ export default function flatAboutJK() {
     html.find('.features-items .item').click(function () {
         let selectedTab = $(this).data('slider');
         const title = $(this).find('.info .heading').text()
-        //console.log('selectedTab', selectedTab)
 
-
-        $(function () {
-            var modal = `
-            <div class="G-modal jk-info">
-                <div class="container-body custom-scroll">
-                    <div class="heading">
-                        <h3 class="title title--h2">${title}</h3>
-                        <p class="desc text text--p1">Высокий потолок в сочетании с большими окнами делает комнаты более светлыми и просторными. Он даёт возможность реализовать практически любые дизайнерские решения</p>
-                    </div>
-                    <div class="splide splide-wrapper ${selectedTab}" slider-title="${selectedTab}">
-                        <div class="splide__track ">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-1.jpg" alt="img" class="slide-photo">
-                                </li>
-                                <li class="splide__slide">
-                                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-2.jpg" alt="img" class="slide-photo">
-                                </li>
-                                <li class="splide__slide">
-                                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-3.jpg" alt="img" class="slide-photo">
-                                </li>
-                                <li class="splide__slide">
-                                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-4.jpg" alt="img" class="slide-photo">
-                                </li>
-                                <li class="splide__slide">
-                                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-5.jpg" alt="img" class="slide-photo">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="splide__arrows slider-arrows">
-                            <button class="splide__arrow splide__arrow--prev" type="button"><i class="icon arrow-left"></i></button>
-                            <button class="splide__arrow splide__arrow--next" type="button"><i class="icon arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="close-modal"><span class="icon-wrapper btn-close-modal"><i class="icon close-smooth"></i></span></div>
+        var content = `
+        <div class="content-wrapper">
+            <div class="heading">
+                <h3 class="title title--h2">${title}</h3>
+                <p class="desc text text--p1">Высокий потолок в сочетании с большими окнами делает комнаты более светлыми и просторными. Он даёт возможность реализовать практически любые дизайнерские решения</p>
+            </div>
+            <div class="splide splide-wrapper ${selectedTab}" slider-title="${selectedTab}">
+                <div class="splide__track ">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-1.jpg" alt="img" class="slide-photo">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-2.jpg" alt="img" class="slide-photo">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-3.jpg" alt="img" class="slide-photo">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-4.jpg" alt="img" class="slide-photo">
+                        </li>
+                        <li class="splide__slide">
+                            <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-5.jpg" alt="img" class="slide-photo">
+                        </li>
+                    </ul>
                 </div>
-            </div>`;
-            modal = $(modal);
+                <div class="splide__arrows slider-arrows left">
+                    <button class="splide__arrow splide__arrow--prev" type="button"><i class="icon arrow-left"></i></button>
+                </div>
+                <div class="splide__arrows slider-arrows right">
+                    <button class="splide__arrow splide__arrow--next" type="button"><i class="icon arrow-right"></i></button>
+                </div>
+            </div>
+<!--            <div class="close-modal"><span class="icon-wrapper btn-close-modal"><i class="icon close-smooth"></i></span></div>-->
+        </div>`;
 
-            initModal(modal);
 
-            //инициализация слайдера на странице ЖК и странице квартира
-            new Splide( '.splide.'+selectedTab, {
-                type: 'slide',
-                // perPage: 1,
-                // pagination: true,
-            }).mount();
+
+        var modal = new Modal({
+            classModal: 'modal-jk-info', // класс для модального окна
+            title: '',
+            content: content, // HTML-контент
+            width: '', // задаем ширину окна "560" / " " (авто)
+            esc: true, // закрыть по клавише ESC
+            closeBackground: true, // закрыть по фону
+            eventCloseModal:'',
+            footerEvents:{
+                cancel: {
+                    active: false,
+                },
+                submit: {
+                    active: false,
+                }
+            }
         });
+
+
+        // инициализация слайдера на странице ЖК и странице квартира
+        new Splide( '.splide.'+selectedTab, {
+            type: 'slide',
+            // perPage: 1,
+            // pagination: true,
+        }).mount();
     });
 }
 
@@ -199,19 +218,19 @@ function sliderInfoJk_mob(data) {
         <div class="splide__track ">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-1.jpg" alt="img" class="slide-photo">
+                    <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-1.jpg" alt="img" class="slide-photo">
                 </li>
                 <li class="splide__slide">
-                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-2.jpg" alt="img" class="slide-photo">
+                    <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-2.jpg" alt="img" class="slide-photo">
                 </li>
                 <li class="splide__slide">
-                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-3.jpg" alt="img" class="slide-photo">
+                    <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-3.jpg" alt="img" class="slide-photo">
                 </li>
                 <li class="splide__slide">
-                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-4.jpg" alt="img" class="slide-photo">
+                    <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-4.jpg" alt="img" class="slide-photo">
                 </li>
                 <li class="splide__slide">
-                    <img data-fancybox="gallery" src="http://mirjk/images/about-jk-features-5.jpg" alt="img" class="slide-photo">
+                    <img data-fancybox="gallery" src="https://mirjk.ru/images/about-jk-features-5.jpg" alt="img" class="slide-photo">
                 </li>
             </ul>
         </div>

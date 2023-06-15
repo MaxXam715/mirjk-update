@@ -2,6 +2,8 @@
     display: flex;
     flex-grow: 1;
     grid-column-gap: 24px;
+
+    aspect-ratio: 69/40;
 }
 
 .P-flat-card .flat-container .left-side .flat-gallery-wrapper {
@@ -14,7 +16,7 @@
     border-radius: 12px;
 }
 
-.P-flat-card .flat-container .splide-wrapper {
+.P-flat-card .flat-container .left-side .splide-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,38 +26,44 @@
     overflow: hidden;
 }
 
-.P-flat-card .flat-container .splide-wrapper .splide__track  {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__track  {
     height: 100%;
 }
 
-.P-flat-card .flat-container .splide-wrapper .splide__slide .slide-photo {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__slide .slide-photo {
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
 }
 
-.P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__slide:first-child .slide-photo {
     aspect-ratio: 1/1;
     margin: auto;
     width: 50%;
     object-fit: contain;
 }
 
-.P-flat-card .slider-arrows {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows {
     position: absolute;
     bottom: 50%;
-    left: 32px;
-    right: 32px;
     display: flex;
     align-items: center;
     column-gap: 15px;
-    width: calc(100% - 64px);
+    /*width: calc(100% - 64px);*/
     transform: translateY(50%);
     justify-content: space-between;
 }
 
-.P-flat-card .splide__arrow {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows.left {
+    left: 32px;
+}
+
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows.right {
+    right: 32px;
+}
+
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows .splide__arrow {
     position: unset;
     width: 56px;
     height: 56px;
@@ -67,34 +75,34 @@
     transition: opacity 0.3s ease;
 }
 
-.P-flat-card .splide__arrow:disabled {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows .splide__arrow:disabled {
     /*opacity: 0.3;*/
     background: rgba(61, 129, 218, 0.3);
     cursor: default;
 }
 
-.P-flat-card .splide__arrow:hover:not(:disabled) {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows .splide__arrow:hover:not(:disabled) {
     opacity: 1;
 }
 
-.P-flat-card .splide__arrow.splide__arrow--next .icon {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows .splide__arrow.splide__arrow--next .icon {
     margin-left: 2px;
 }
 
-.P-flat-card .splide__arrow .icon {
+.P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows .splide__arrow .icon {
     font-size: 14px;
     background-color: #FFFAFA;
 }
 
-.P-flat-card .splide__pagination  {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination  {
     bottom: 13px;
 }
 
-.P-flat-card .splide__pagination__page {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination__page {
     margin: 4px;
 }
 
-.P-flat-card .splide__pagination__page.is-active {
+.P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination__page.is-active {
     background-color: #3D81DA;
     opacity: 1;
     border-radius: 3px;
@@ -121,10 +129,12 @@
         width: 80%;
     }
 
-    .P-flat-card .slider-arrows {
+    .P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows.left {
         left: 24px;
+    }
+
+    .P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows.right {
         right: 24px;
-        width: calc(100% - 48px);
     }
 }
 
@@ -147,6 +157,10 @@
     .P-flat-card .flat-container .splide-wrapper .splide__slide:first-child .slide-photo {
         width: 50%;
     }
+
+    .P-flat-card .flat-container .left-side .splide-wrapper .slider-arrows {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -167,15 +181,15 @@
         width: 100%;
     }
 
-    .P-flat-card .splide__pagination {
+    .P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination {
         bottom: 5px;
     }
 
-    .P-flat-card .splide__pagination__page {
+    .P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination__page {
         margin: 3px;
     }
 
-    .P-flat-card .splide__pagination__page.is-active {
+    .P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination__page.is-active {
         transform: scale(1.5, 1);
     }
 }
