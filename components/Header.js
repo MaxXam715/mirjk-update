@@ -1,6 +1,6 @@
 function HeaderMain() {
     var html = `
-    <header class="G-header header">
+    <header class="G-header">
         <div class="G-container">
             <div class="wrapper-container">
                 <a href="/" class="logo"><img src="/assets/img/logotype.svg" alt="" class="logo-image"></a>
@@ -21,34 +21,34 @@ function HeaderMain() {
     html = $(html);
     $('#app').before(html);
 
-    //Показать скрыть меню при скролле
-    hideShowHeader()
+    // Показать/скрыть меню при скролле
+    hideShowHeader();
 
     //открытие закрытие меню по клику на бургер
     $('.G-header .burger').on('click', function () {
-        $(this).toggleClass('active')
-        $('.G-header').toggleClass('active')
-        $('body').toggleClass('no-scroll')
+        $(this).toggleClass('active');
+        $('.G-header').toggleClass('active');
+        $('body').toggleClass('no-scroll');
     });
 }
 
 function hideShowHeader() {
-    const $header = $(".G-header")
+    const $header = $(".G-header");
     let lastScroll = 0;
 
     $(window).scroll(function() {
         const hidePosition = 50;
 
         if (window.scrollY > hidePosition) {
-            $header.css('box-shadow','0 4px 24px rgba(0, 0, 0, 0.08)')
+            $header.css('box-shadow','0 4px 24px rgba(0, 0, 0, 0.08)');
         } else {
-            $header.css('box-shadow', 'none')
+            $header.css('box-shadow', 'none');
         }
 
         if (window.scrollY > hidePosition && window.scrollY > lastScroll) {
-            $header.addClass('hidden')
+            $header.addClass('hidden');
         } else {
-            $header.removeClass('hidden')
+            $header.removeClass('hidden');
         }
         lastScroll = window.scrollY;
     })
