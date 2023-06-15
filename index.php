@@ -65,13 +65,10 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "mirjk.ru") !==
     <link rel="apple-touch-icon" href="/static/favicon.svg">
     <link rel="mask-icon" href="/static/favicon.svg">
 
-    <!-- color header browser - Chrome, Firefox OS and Opera -->
+    <!-- color header browser -->
     <meta name="theme-color" content="#1375A0">
-    <!-- color header browser - Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#1375A0">
-    <!-- color header browser - iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#1375A0">
-
 
     <!-- Style global -->
     <link rel="stylesheet" href="/assets/css/global.css?v=<?=$v?>">
@@ -81,14 +78,14 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "mirjk.ru") !==
 
     <main id="app"></main>
 
+    <script src="/plugins/uikit/uikit.min.js"></script>
     <script src="/plugins/jquery-3.7.0.min.js"></script>
     <script src='/assets/js/scripts.js?v=<?=$v?>'></script>
 
     <?php
-    if( $_SERVER['REQUEST_URI'] == '/novostroyki-na-karte' || $_SERVER['REQUEST_URI'] == '/kvartiry' ){ ?>
+    if ( $_SERVER['REQUEST_URI'] == '/novostroyki-na-karte' || $_SERVER['REQUEST_URI'] == '/kvartiry' ) { ?>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=64b5ada5-93cf-456c-830c-e3370638a1ee&lang=ru_RU"></script> <?
-    }
-    ?>
+    } ?>
 
 </body>
 </html>

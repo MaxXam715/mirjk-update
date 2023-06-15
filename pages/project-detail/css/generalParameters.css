@@ -1,0 +1,333 @@
+.P-general-parameters {
+    margin-bottom: 124px;
+    overflow: hidden;
+}
+
+.P-general-parameters .content-wrapper {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+
+.P-general-parameters .location-row {
+    display: flex;
+}
+
+.P-general-parameters .location-row .map-wrapper {
+    display: none;
+    width: 268px;
+    height: 144px;
+    background-color: #0f6ecd;
+    border-radius: 12px;
+    margin-right: 40px;
+}
+
+.P-general-parameters .location-row .text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.P-general-parameters .location-row .text-info .subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+    letter-spacing: 0.96px;
+    color: #696969;
+    margin-bottom: 20px;
+}
+
+.P-general-parameters .location-row .text-info .address {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: 0.01px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.P-general-parameters .location-row .text-info .metro {
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.01px;
+
+    color: #20313B;
+}
+
+.P-general-parameters .location-row .text-info .metro .name {
+    display: flex;
+    align-items: center;
+}
+
+.P-general-parameters .location-row .text-info .metro .name .icon.metro-icon {
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+.P-general-parameters .location-row .text-info .metro .walk-metro {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.P-general-parameters .location-row .text-info .metro .walk-metro .icon.walking-people {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.P-general-parameters .items-wrapper {
+    width: 54%;
+}
+
+.P-general-parameters .info-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.P-general-parameters .info-items .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.P-general-parameters .info-items .item .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.P-general-parameters .info-items .item .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    letter-spacing: 0.01px;
+}
+
+.P-general-parameters .info-items .item .subtitle {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #696969;
+    margin-bottom: 8px;
+}
+
+.P-general-parameters .info-items .item .value {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000000;
+}
+
+.P-general-parameters .see-all-info-btn {
+    height: 52px;
+}
+
+@media screen and (max-width: 1455px) {
+    .P-general-parameters {
+        margin-bottom: 80px;
+    }
+
+    .P-general-parameters .content-wrapper {
+        flex-direction: column;
+    }
+
+    .P-general-parameters .location-row .text-info .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .P-general-parameters .location-row .text-info .metro .walk-metro {
+        margin-left: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .P-general-parameters .location-row .text-info .metro .walk-metro .icon.walking-people{
+        margin-right: 5px;
+    }
+
+    .P-general-parameters .items-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .P-general-parameters {
+        margin-bottom: 60px;
+    }
+
+    .P-general-parameters .location-row .text-info .metro .name .icon.metro-icon {
+        margin-right: 5px;
+    }
+
+    .P-general-parameters .location-row .text-info .metro .walk-metro {
+        margin-left: 12px;
+    }
+
+
+    .P-general-parameters .items-wrapper {
+        width: 100%;
+    }
+
+    .P-general-parameters .info-items .item .icon-wrapper {
+        margin-left: 5px;
+    }
+}
+
+
+@media screen and (max-width: 911px) {
+    .P-general-parameters {
+        margin-top: 0;
+        z-index: 1;
+        position: relative;
+    }
+
+    .P-general-parameters .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .P-general-parameters .content-wrapper {
+        padding: 24px 16px;
+        padding-top: 0;
+        border-radius: 0;
+    }
+
+    .P-general-parameters .location-row {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .P-general-parameters .location-row .map-wrapper {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        margin-right: 0;
+        overflow: hidden;
+
+        margin-left: 40px;
+    }
+
+    .P-general-parameters .location-row .map-wrapper img {
+        object-fit: cover;
+        height: 100%;
+        object-position: center;
+    }
+
+    .P-general-parameters .location-row .text-info .subtitle {
+        display: none;
+    }
+
+    .P-general-parameters .location-row .text-info .address {
+        font-size: 14px;
+        line-height: 1.57;
+
+        color: #20313B;
+        margin-bottom: 4px;
+    }
+
+    .P-general-parameters .location-row .text-info .metro {
+        align-items: flex-end;
+    }
+
+    .P-general-parameters .location-row .text-info .metro .name .icon.metro-icon {
+        margin-bottom: -2px;
+    }
+
+    .P-general-parameters .items-wrapper {
+        overflow: hidden;
+        width: calc(100% + 48px);
+        padding-left: 24px;
+        margin-left: -24px;
+        padding-right: 24px;
+        margin-right: -24px;
+    }
+
+    .P-general-parameters .info-items {
+        padding-left: 24px;
+        margin-left: -24px;
+        padding-right: 24px;
+        margin-right: -24px;
+        /*display: grid;*/
+        /*grid-template-columns: repeat(4, 1fr);*/
+        grid-gap: 16px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: nowrap;
+
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+    }
+
+    .P-general-parameters .info-items .item {
+        flex-shrink: 0;
+
+        background: #F6F6F6;
+        border-radius: 4px;
+        padding: 12px;
+
+        grid-column-gap: 12px;
+    }
+
+    .P-general-parameters .info-items .item .icon-wrapper {
+        width: 24px;
+        height: 24px;
+    }
+
+    .P-general-parameters .info-items .item .text {
+        margin-left: 0;
+    }
+
+    .P-general-parameters .info-items .item .subtitle {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    .P-general-parameters .info-items .item .value {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .P-general-parameters .see-all-info-btn {
+        height: 40px;
+        transition: width 0.3s ease;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .P-general-parameters {
+        position: relative;
+        margin-bottom: 2px;
+    }
+
+    .P-general-parameters .content-wrapper {
+        grid-gap: 24px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .P-general-parameters .location-row {
+        justify-content: space-between;
+    }
+
+    .P-general-parameters .location-row .map-wrapper {
+        margin-left: 0;
+    }
+}

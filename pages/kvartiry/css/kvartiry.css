@@ -6,4 +6,6 @@
 @import "/plugins/splide/css/splide-default.min.css";
 @import "./flatAboutJK.css";
 @import "./flatLocationJK.css";
+@import "./flatSimilar.css";
+@import "/assets/css/components/FlatCard_vertical.css";
 @import "./modal-jk-info.css";

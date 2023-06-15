@@ -1,3 +1,5 @@
+import JK from "/classesJS/jk.js";
+
 export default function CatalogJK() {
     var html = `
     <section class="G-section-catalog-jk">
@@ -14,7 +16,7 @@ export default function CatalogJK() {
 }
 
 function getTopJks() {
-    var Planeta = new PlanetaClass();
+    var Planeta = new JK();
 
     $(".P-cards-jk-wrapper").html('');
     Planeta.getJks({

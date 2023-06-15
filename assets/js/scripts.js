@@ -31,18 +31,6 @@ $.ajax({ // Router
     dataType: "script"
 });
 
-$.ajax({ // Planeta Class
-    async: false,
-    url: "/classesJS/planeta.js?v="+version,
-    dataType: "script"
-});
-
-$.ajax({ // UIKit
-    async: false,
-    url: "/plugins/uikit/uikit.min.js?v="+version,
-    dataType: "script"
-});
-
 var titlePage = document.title,
     url = getFilterParamsfromUrl(),
     url_page = window.location.pathname,

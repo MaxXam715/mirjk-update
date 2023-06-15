@@ -3,10 +3,6 @@ export default class JK {
     travel_modes = {0: 'пешком', 1: 'на транспорте'};
     #id;
 
-    constructor() {
-
-    }
-
     getJks(params) {
         var filter = params.filter;
         $.post('https://mirjk.planetarf.ru/api/site.php', {method: 'getJks', filter: JSON.stringify(filter)}, (res) => {
@@ -71,7 +67,8 @@ export default class JK {
             <div class="G-card-jk" id="${item['id']}">
                 
                 <div class="photo-container">
-                    <a href="/novostroyki/${item.seo_title}" target="_blank" class="photo-link">
+<!--                    <a href="/novostroyki/${item.seo_title}" target="_blank" class="photo-link">-->
+                    <a href="/project-detail" target="_blank" class="photo-link">
                        <div class="img-wrapper"> <img src="//planetarf.ru/uploads/mirjk/galleries/${photo.file}" alt=""></div>
                     </a>
                 </div>
@@ -142,14 +139,3 @@ export default class JK {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
