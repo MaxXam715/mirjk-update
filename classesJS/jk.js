@@ -1,3 +1,5 @@
+import JkCard from "/components/JkCard.js";
+
 export default class JK {
     classes = {0: 'не определен', 1: 'Эконом', 2: 'Комфорт', 3: 'Бизнес', 4: 'Премиум', 5: 'Элитный'};
     travel_modes = {0: 'пешком', 1: 'на транспорте'};
@@ -63,78 +65,7 @@ export default class JK {
         var addr = item.city + `, ` + item.okrug + `, ` + item.streetType + ` ` + item.street + `, ` + item.numType + ` ` + item.num;
 
 
-        var html = `
-            <div class="G-card-jk" id="${item['id']}">
-                
-                <div class="photo-container">
-<!--                    <a href="/novostroyki/${item.seo_title}" target="_blank" class="photo-link">-->
-                    <a href="/project-detail" target="_blank" class="photo-link">
-                       <div class="img-wrapper"> <img src="//planetarf.ru/uploads/mirjk/galleries/${photo.file}" alt=""></div>
-                    </a>
-                </div>
-                
-                <div class="jk-info">`;
-                    if (item.groups !== undefined) {
-                        var size = Object.keys(item.groups.rooms).length;
-
-                        html += `
-                        <div class="info-toggle">
-                            <div class="offers">
-                                <ul class="offers-list">`;
-                                    for (var r in item.groups.rooms) {
-                                        var group = item.groups.rooms[r],
-                                            rooms_txt = (r == 0) ? 'Студия' : r + '-комнатная';
-
-                                        html += `                                                        
-                                        <li class="offer-item">                                        
-                                            <a href="/novostroyki/${item.seo_title}/kvartiry?rooms[]=${r}" class="link"><span class="rooms">${rooms_txt}</span></a>
-                                            <p class="square">от&nbsp;<span class="value">${group.min_square}</span>&nbsp;м²</p>
-                                            <p class="price">от&nbsp;<span class="value">${numberWithSpaces(group.min_cost / 1000000, 2)}</span>&nbsp;млн.&nbsp;₽</p>
-                                        </li>`;
-                                    }
-                                html += `
-                                </ul>
-                            </div>
-                        </div>`;
-                    }
-
-                    html += `
-                    <div class="info-footer">
-                        <a href="/novostroyki/${item.seo_title}" target="_blank" class="jk-name">${item.title}</a>
-                        <div class="jk-metro">`;
-                            var metro, c = 0;
-                            for (var i in item.metros) {
-                                c++;
-                                metro = item.metros[i];
-                            html += `
-                            <div class="item">
-                                <p class="name-branch"><span class="color-branch" style="background-color:${metro.color}" ></span>${metro.title}</p>
-                                <span class="walking-metro"><i class="icon walking-people"></i> ${metro.duration} мин.</span>
-                            </div>`;
-                                if (c == 1) {break}
-                            }
-                    html += `
-                        </div>
-                    
-                        <p class="jk-address">${addr}</p>
-                        <div class="indicators">
-                            <p class="point cost">от <span class="value">${numberWithSpaces(Math.round(item.min_price))}</span> ₽ за м²</p>
-                            <p class="point category">${this.classes[item.class]}</p>
-                            <p class="point deadline">Сдача в&nbsp; ${dt_format(item.date_end, 'Q Y')}</p>
-                        </div>
-                        <p class="toggle-btn">Раскрыть</p>
-                    </div>
-
-                    <p class="developer">Застройщик `;
-            if (item.participants !== undefined && item.participants !== '') {
-                html += `<span>«${item.participants[Object.keys(item.participants)[0]].company.brand.title}»</span>
-                    </p>`
-                    } else {
-                html += ` -- нет данных --`
-            }
-                html += `
-                </div>
-            </div>`;
+        var html = JkCard();
         return html;
     }
 

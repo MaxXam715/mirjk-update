@@ -1,0 +1,303 @@
+.P-construction-progress-jk {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.P-construction-progress-jk .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.P-construction-progress-jk .heading .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.P-construction-progress-jk .heading .heading-right,
+.P-construction-progress-jk .heading .slider-controls {
+    display: flex;
+    align-items: center;
+}
+
+.P-construction-progress-jk .heading .heading-right .check-date {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: #4F4F4F;
+}
+
+.P-construction-progress-jk .heading .heading-right .check-date .value {
+    margin-left: 10px;
+}
+
+.P-construction-progress-jk .heading .slider-controls {
+    margin-left: 30px;
+}
+
+.P-construction-progress-jk .heading .slider-controls .btn {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #B3B3B3;
+    background-color: transparent;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 12px;
+
+    transition: border-color 200ms ease;
+}
+
+.P-construction-progress-jk .heading .slider-controls .btn:hover {
+    border-color: var(--blue);
+}
+
+.P-construction-progress-jk .heading .slider-controls .btn:last-child {
+    margin-right: 0;
+}
+
+.P-construction-progress-jk .heading .slider-controls .btn .icon {
+    font-size: 10px;
+    width: 100%;
+    background-color: #B3B3B3;
+    transition: background-color 0.2s ease;
+}
+
+.P-construction-progress-jk .heading .slider-controls .btn:hover .icon {
+    background-color: var(--blue);
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide {
+    max-width: 400px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    height: 272px;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide:last-child {
+    margin-right: 0;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .photo-place {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 24px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-top {
+    display: flex;
+    grid-column-gap: 8px;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-top .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 1;
+    color: #000000;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom .year {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: inline-block;
+}
+
+.P-construction-progress-jk .splide__arrows {
+    position: absolute;
+    left: -28px;
+    bottom: calc(50% + 28px);
+    width: calc(100% + 56px);
+}
+
+.P-construction-progress-jk .splide__arrows .splide__arrow {
+    background: rgba(0, 0, 0, 0.64);
+    backdrop-filter: blur(6px);
+    width: 56px;
+    height: 56px;
+    transform: none;
+    left: unset;
+}
+
+.P-construction-progress-jk .splide__arrows .splide__arrow[disabled] {
+    background: rgba(0, 0, 0, 1);
+    backdrop-filter: blur(6px);
+}
+
+.P-construction-progress-jk .splide__arrows .splide__arrow--next {
+    right: 0;
+}
+
+.P-construction-progress-jk .splide__arrows .splide__arrow .icon {
+    background-color: #FFFAFA;
+}
+
+@media screen and (max-width: 1440px) {
+    .P-construction-progress-jk .heading {
+        margin-bottom: 32px;
+    }
+
+    .P-construction-progress-jk .heading .title {
+        font-size: 32px;
+        line-height: 1.12;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide {
+        max-width: 310px;
+        height: 224px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner {
+        padding: 24px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom .year {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    .P-construction-progress-jk .heading {
+        margin-bottom: 24px;
+    }
+
+    .P-construction-progress-jk .heading .title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide {
+        max-width: 224px;
+        height: 180px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner {
+        padding: 20px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom .year {
+        font-size: 12px;
+        line-height: 1.33;
+    }
+
+    .P-construction-progress-jk .full-right {
+
+    }
+
+    .P-construction-progress-jk .full-right .splide__track {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .P-construction-progress-jk .splide__arrows {
+        position: absolute;
+        left: -20px;
+        bottom: calc(50% + 20px);
+        width: calc(100% + 40px);
+    }
+
+    .P-construction-progress-jk .splide__arrows .splide__arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .P-construction-progress-jk {
+        margin-top: 24px;
+    }
+
+    .P-construction-progress-jk .content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .P-construction-progress-jk .splide__arrows {
+        display: none;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide {
+        max-width: 200px;
+        height: 160px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner {
+        padding: 12px;
+    }
+
+    .P-construction-progress-jk .splide-wrapper.splide .splide__slide .inner-bottom {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .P-construction-progress-jk .full-right .splide__track {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .P-construction-progress-jk .heading {
+        flex-direction: column;
+        grid-row-gap: 4px;
+        align-items: flex-start;
+    }
+}
