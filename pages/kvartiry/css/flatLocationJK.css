@@ -185,6 +185,13 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .G-jk-map .jk-map-wrapper .location-jk {
+        margin-left: -40px;
+        margin-right: -40px;
+        width: calc(100% + 80px);
+    }
+}
 
 @media screen and (max-width: 1025px) {
     .G-jk-map {
@@ -201,8 +208,8 @@
     .G-jk-map .jk-map-wrapper .location-jk {
         height: 620px;
 
-        margin-left: calc(0px - (100vw - var(--container) / 2));
-        margin-right: calc(0px - (100vw - var(--container) / 2));
+        /*margin-left: calc(0px - (100vw - var(--container) / 2));*/
+        /*margin-right: calc(0px - (100vw - var(--container) / 2));*/
     }
 }
 

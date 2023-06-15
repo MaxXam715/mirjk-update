@@ -70,7 +70,7 @@
     opacity: 1;
     transform: none;
 
-    background: #3D81DA;
+    background: var(--blue);
     backdrop-filter: blur(6px);
     transition: opacity 0.3s ease;
 }
@@ -103,7 +103,7 @@
 }
 
 .P-flat-card .flat-container .left-side .splide-wrapper .splide__pagination__page.is-active {
-    background-color: #3D81DA;
+    background-color: var(--blue);
     opacity: 1;
     border-radius: 3px;
     transform: scale(2, 1.5);

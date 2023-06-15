@@ -38,89 +38,89 @@
     margin-bottom: 27px;
 }
 
+/*Вынесено в Global*/
+/*!*Блок с адресом, метро*!*/
+/*.P-flat-card .flat-container .right-side .flat-about .address .location {*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*    grid-column-gap: 12px;*/
 
-/*Блок с адресом, метро*/
-.P-flat-card .flat-container .right-side .flat-about .address .location {
-    margin-top: 0;
-    margin-bottom: 0;
-    grid-column-gap: 12px;
 
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    max-width: 100%;*/
 
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    color: #20313B;*/
+/*}*/
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #20313B;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .address .location > div {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    grid-column-gap: 4px;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .address .location > div {
-    display: flex;
-    align-items: center;
-    grid-column-gap: 4px;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .address .location .place {*/
+/*    width: 100%;*/
+/*    margin-bottom: 8px;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .address .location .place {
-    width: 100%;
-    margin-bottom: 8px;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .address .location .metro,*/
+/*.P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro {*/
+/*    font-size: 14px;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .address .location .metro,
-.P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro {
-    font-size: 14px;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .address .location .metro .icon {*/
+/*    font-size: 16px;*/
+/*    background-color: #B1C828;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .address .location .metro .icon {
-    font-size: 16px;
-    background-color: #B1C828;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro .icon {*/
+/*    font-size: 16px;*/
+/*    background-color: #20313B;*/
+/*}*/
+/*!*КОНЕЦ Блок с адресом, метро*!*/
 
-.P-flat-card .flat-container .right-side .flat-about .address .location .walk-metro .icon {
-    font-size: 16px;
-    background-color: #20313B;
-}
-/*КОНЕЦ Блок с адресом, метро*/
+/*!*Блок с ценами*!*/
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper {*/
+/*    margin-bottom: 22px;*/
+/*}*/
 
-/*Блок с ценами*/
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper {
-    margin-bottom: 22px;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row {*/
+/*    display: flex;*/
+/*    align-items: flex-end;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row {
-    display: flex;
-    align-items: flex-end;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row:not(:first-child) {*/
+/*    margin-top: 8px;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row:not(:first-child) {
-    margin-top: 8px;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .full-price {*/
+/*    font-weight: 700;*/
+/*    font-size: 24px;*/
+/*    line-height: 1;*/
+/*    color: #000000;*/
+/*    margin-right: 8px;*/
+/*    white-space: nowrap;*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .full-price {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1;
-    color: #000000;
-    margin-right: 8px;
-    white-space: nowrap;
-}
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .price-mortgage {*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 1.14;*/
+/*    color: var(--blue);*/
+/*}*/
 
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .price-mortgage {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #3D81DA;
-}
-
-.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .price-per-meter {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1;
-    color: #696969;
-}
-/*КОНЕЦ Блок с ценами*/
+/*.P-flat-card .flat-container .right-side .flat-about .price-wrapper .price-row .price-per-meter {*/
+/*    font-weight: 400;*/
+/*    font-size: 12px;*/
+/*    line-height: 1;*/
+/*    color: #696969;*/
+/*}*/
+/*!*КОНЕЦ Блок с ценами*!*/
 
 
 /*.P-flat-card .flat-container .right-side .flat-about .address-icon {*/

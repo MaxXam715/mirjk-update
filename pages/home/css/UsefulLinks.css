@@ -21,7 +21,7 @@
 .P-section-helpful-links .compilation {
     display: flex;
     flex-direction: column;
-    background-color: #3D81DA;
+    background-color: var(--blue);
     padding: 24px;
     border-radius: 12px;
 

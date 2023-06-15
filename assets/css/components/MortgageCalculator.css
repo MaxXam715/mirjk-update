@@ -272,7 +272,7 @@
 
 .G-section-mortgage .calc-row .quick-pick-row .pick-item:hover,
 .G-section-mortgage .calc-row .quick-pick-row .pick-item.active {
-    background-color: #3D81DA;
+    background-color: var(--blue);
     color: #FFFFFF;
 }
 
@@ -315,7 +315,7 @@
     font-size: 52px;
     line-height: 52px;
     letter-spacing: 0.04em;
-    color: #3D81DA;
+    color: var(--blue);
     white-space: nowrap;
 
 }

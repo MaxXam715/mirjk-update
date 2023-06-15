@@ -152,21 +152,109 @@ img[src=''] {
 
 @media (max-width: 1600px) {
   .G-container {
-    max-width: calc(1590px + 160px);
-    padding: 0 80px;
+    max-width: calc(1590px + 120px);
+    padding: 0 60px;
   }
 }
 
 @media (max-width: 1200px) {
   .G-container {
-    max-width: calc(1590px + 48px);
-    padding: 0 24px;
+    max-width: calc(1590px + 80px);
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   .G-container {
     max-width: calc(1590px + 32px);
     padding: 0 16px;
   }
 }
+
+
+
+/*Блок с адресом, метро в карточке*/
+.G-address .location {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column-gap: 12px;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #20313B;
+}
+
+.G-address .location > div {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 4px;
+}
+
+.G-address .location .place {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.G-address .location .metro,
+.G-address .location .walk-metro {
+  font-size: 14px;
+}
+
+.G-address .location .metro .icon {
+  font-size: 16px;
+  background-color: #B1C828;
+}
+
+.G-address .location .walk-metro .icon {
+  font-size: 16px;
+  background-color: #20313B;
+}
+/*КОНЕЦ Блок с адресом, метро*/
+
+
+
+
+/*Блок с ценами*/
+.G-prices {
+  margin-bottom: 22px;
+}
+
+.G-prices .price-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.G-prices .price-row:not(:first-child) {
+  margin-top: 8px;
+}
+
+.G-prices .price-row .full-price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.G-prices .price-row .price-mortgage {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--blue);
+}
+
+.G-prices .price-row .price-per-meter {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #696969;
+}
+/*КОНЕЦ Блок с ценами*/

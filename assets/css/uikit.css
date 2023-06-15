@@ -35,7 +35,7 @@
 }
 
 .btn--blue {
-    background: #3D81DA;
+    background: var(--blue);
     transition: background-color 0.2s ease;
 }
 
@@ -55,14 +55,14 @@
 
 .btn--transparent {
     background-color: transparent;
-    border: 1px solid #3D81DA;
-    color: #3D81DA;
+    border: 1px solid var(--blue);
+    color: var(--blue);
     border-radius: 64px;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .btn--transparent:hover {
-    background-color: #3D81DA;
+    background-color: var(--blue);
     color: #FFFFFF;
 }
 
