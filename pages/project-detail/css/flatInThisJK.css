@@ -209,6 +209,11 @@
     flex-shrink: 0;
 }
 
+.P-flats-jk .right-side .advantages .item .icon-wrapper .icon {
+    font-size: 48px;
+    background-color: var(--blue);
+}
+
 .P-flats-jk .right-side .advantages .item .text-wrapper .title {
     font-weight: 500;
     font-size: 20px;
@@ -290,6 +295,10 @@
     .P-flats-jk .right-side .advantages .item .icon-wrapper {
         width: 36px;
         height: 36px;
+    }
+
+    .P-flats-jk .right-side .advantages .item .icon-wrapper .icon {
+        font-size: 36px;
     }
 
     .P-flats-jk .right-side .advantages .item .text-wrapper .title {
@@ -387,6 +396,10 @@
 @media screen and (max-width: 700px) {
     .P-flats-jk {
         margin-bottom: 0;
+    }
+
+    .P-flats-jk .G-container {
+        padding: 0;
     }
 
     .P-flats-jk .content {
@@ -549,26 +562,4 @@
 
         max-width: 90%;
     }
-
-    .P-flats-jk .right-side .advantages .item .icon-wrapper {
-        /*width: 36px;*/
-        /*height: 36px;*/
-        /*flex-shrink: 0;*/
-    }
-
-    .P-flats-jk .right-side .advantages .item .text-wrapper .title {
-        /*font-weight: 500;*/
-        /*font-size: 16px;*/
-        /*line-height: 1.25;*/
-        /*letter-spacing: 0.64px;*/
-        /*color: #000000;*/
-        /*margin-bottom: 4px;*/
-    }
-
-    /*.P-flats-jk .right-side .advantages .item .text-wrapper .description {*/
-    /*    font-weight: 400;*/
-    /*    font-size: 14px;*/
-    /*    line-height: 1.75;*/
-    /*    color: #696969;*/
-    /*}*/
 }

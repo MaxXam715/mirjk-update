@@ -25,7 +25,7 @@ export default function projectBanner() {
                         </ul>
                     </div>
     
-                    <div class="splide__arrows content banner-arrows">
+                    <div class="splide__arrows G-container banner-arrows">
                         <button class="splide__arrow splide__arrow--prev arrow"><i class="icon arrow-left"></i></button>
                         <button class="splide__arrow splide__arrow--next arrow"><i class="icon arrow-right"></i></button>
                     </div>
@@ -65,7 +65,7 @@ export default function projectBanner() {
                             <div class="advantage-item">С отделкой</div>
                         </div>
                     </div>
-                    <h2 class="main-title"><? echo $jk['title'] ?></h2>
+                    <h2 class="main-title">ЖК Название  <? echo $jk['title'] ?></h2>
                     <div class="price-range">от 80,4 млн ₽ до 731,9 млн ₽</div>
                     <div class="price-per-meter-range">от 1 914 983 до 3 658 429 ₽/м²</div>
                     <div class="banner-buttons">
@@ -125,4 +125,17 @@ export default function projectBanner() {
             page: 'splide__pagination__page js-splide-jk-banner',
         },
     }).mount();
+
+    const section = html.find('.slider-wrapper')
+    const heightSection = section.innerHeight();
+    const heightBtn = html.find('.banner-buttons').innerHeight();
+    console.log('высота кнопки', heightBtn)
+    if (window.innerWidth <= 911) {
+        // $section.css('height','calc(100vh - ${heightNav}px - ${heightContent})')
+        // console.log(section.css('height'));
+        // const height = heightSection - heightBtn
+        // section.css('height', `${height}px`)
+
+        $('.P-container-jk-banner').css('height', `calc(100vh - ${heightNav}px - ${heightBtn}px)`)
+    }
 }

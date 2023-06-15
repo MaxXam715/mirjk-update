@@ -195,7 +195,7 @@ export default function flatInThisJK() {
                     <div class="advantages">
                         <div class="item">
                             <div class="icon-wrapper">
-                                <img src="/images/booking.svg" alt="">
+                                <i class="icon booking"></i>
                             </div>
                             <div class="text-wrapper">
                                 <h5 class="title">Бронирование online</h5>
@@ -206,7 +206,7 @@ export default function flatInThisJK() {
     
                         <div class="item">
                             <div class="icon-wrapper">
-                                <img src="/images/mortgage.svg" alt="">
+                                <i class="icon mortgage"></i>
                             </div>
                             <div class="text-wrapper">
                                 <h5 class="title">Ипотека от 0,01 %</h5>
@@ -217,7 +217,7 @@ export default function flatInThisJK() {
     
                         <div class="item">
                             <div class="icon-wrapper">
-                                <img src="/images/safety.svg" alt="">
+                                <i class="icon safety"></i>
                             </div>
                             <div class="text-wrapper">
                                 <h5 class="title">Безопасность сделки</h5>

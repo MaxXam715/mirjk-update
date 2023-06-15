@@ -76,6 +76,16 @@
     backdrop-filter: blur(20px);
     border-radius: 50px;
     color: #FFFFFF;
+    padding: 8px 12px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
 }
 
 .P-container-jk-banner .inner-content .main-title {
@@ -118,10 +128,17 @@
 }
 
 /*arrows for slider*/
+
+
+
+.P-container-jk-banner .slider-banner .G-container {
+    position: relative;
+}
+
 .P-container-jk-banner .splide__arrows {
     position: absolute;
     z-index: 1;
-    left: calc(50% - 30px);
+    /*left: calc(50% - 30px);*/
     bottom: 152px;
     display: flex;
     align-items: center;
@@ -129,7 +146,7 @@
     grid-gap: 12px;
     height: 0;
     padding: 0;
-    transform: translateX(-50%);
+    /*transform: translateX(-50%);*/
 }
 
 .P-container-jk-banner .banner-arrows {
@@ -138,7 +155,7 @@
 
 .P-container-jk-banner .banner-arrows .arrow {
     position: static;
-    transform: none;
+    transform: translateX(-100%);
     height: 56px;
     width: 56px;
     background: rgba(0, 0, 0, 0.64);
@@ -215,6 +232,7 @@
     border-radius: 4px;
     padding: 17px 24px;
     color: #000000;
+    margin-left: auto;
 
     transition: background-color 0.3s ease;
 }
@@ -236,8 +254,8 @@
 }
 
 .P-container-jk-banner .bottom-panel .G-container {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(4, 1fr);*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .P-container-jk-banner .bottom-panel .item {
@@ -306,7 +324,7 @@
     }
 
     .P-container-jk-banner .slider-items .img-back {
-        height: 726px;
+        /*height: 726px;*/
     }
 
     .P-container-jk-banner .splide__arrows {
@@ -324,6 +342,7 @@
 
     .P-container-jk-banner .inner-content .advantage-item {
         padding: 6px 12px;
+        flex-shrink: 0;
     }
 
     .P-container-jk-banner .inner-content .main-title {
@@ -395,7 +414,7 @@
     }
 
     .P-container-jk-banner .slider-items .img-back {
-        height: 632px;
+        /*height: 632px;*/
     }
 
     .P-container-jk-banner .inner-content {
@@ -527,7 +546,7 @@
     }
 
     .P-container-jk-banner .slider-items .img-back {
-        height: 392px;
+        /*height: 392px;*/
     }
 
     .P-container-jk-banner .slider-items .img-back:after {
@@ -619,14 +638,14 @@
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link:hover,
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link:active,
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link.active {
-        background: var(--blue);
+        background: #3D81DA;
         color: #FFFFFF;
     }
 
     /*END стили для ссылок якорей на мобилке */
     .P-container-jk-banner .inner-content {
         bottom: unset;
-
+        z-index: 1;
         position: unset;
         background-color: #FFFFFF;
         color: #000000;
@@ -686,6 +705,7 @@
         z-index: 10;
         padding: 16px;
         background-color: #FFFFFF;
+        margin-top: 0;
     }
 
     .P-container-jk-banner .inner-content .banner-buttons .btn {

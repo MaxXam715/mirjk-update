@@ -207,3 +207,18 @@
     mask-image: url(percent-big.svg);
     -webkit-mask-image: url(percent-big.svg);
 }
+
+.icon.booking {
+    mask-image: url(booking.svg);
+    -webkit-mask-image: url(booking.svg);
+}
+
+.icon.mortgage {
+    mask-image: url(mortgage.svg);
+    -webkit-mask-image: url(mortgage.svg);
+}
+
+.icon.safety {
+    mask-image: url(safety.svg);
+    -webkit-mask-image: url(safety.svg);
+}

@@ -190,7 +190,7 @@
 @media screen and (max-width: 911px) {
     .P-general-parameters {
         margin-top: 0;
-        z-index: 1;
+        /*z-index: 1;*/
         position: relative;
     }
 
@@ -309,6 +309,12 @@
     }
 }
 
+
+@media screen and (max-width: 700px) {
+    .P-general-parameters .G-container {
+        padding: 0;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .P-general-parameters {
