@@ -619,7 +619,7 @@
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link:hover,
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link:active,
     .P-container-jk-banner .anchors-wrapper.fixed .anchor-link.active {
-        background: #3D81DA;
+        background: var(--blue);
         color: #FFFFFF;
     }
 

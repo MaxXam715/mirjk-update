@@ -40,7 +40,7 @@ export default function flatAboutJK() {
                     </div>
                 </div>
                 <div class="features">`;
-                    if (window.innerWidth > 700) {
+                    if (window.innerWidth > 800) {
                         html += `
                         <div class="features-items">
                             <div class="item" data-slider="landscaping">
@@ -118,7 +118,7 @@ export default function flatAboutJK() {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
-    if (window.innerWidth < 991) {
+    if (window.innerWidth <= 800) {
         sliderInfoJk_mob({
             title: 'ascasc',
             className: 'slider-landscaping',

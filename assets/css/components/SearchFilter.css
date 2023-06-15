@@ -323,7 +323,7 @@
 }
 
 .select__option:hover {
-    background-color: #3D81DA;
+    background-color: var(--blue);
     color: #FFFFFF;
 }
 
@@ -333,7 +333,7 @@
 }
 
 .select__option:hover::before {
-    background-color: #3D81DA;
+    background-color: var(--blue);
 }
 
 .select--active .select__value {
@@ -471,7 +471,7 @@
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.04em;
-    color: #3D81DA;
+    color: var(--blue);
 
     justify-self: center;
 }

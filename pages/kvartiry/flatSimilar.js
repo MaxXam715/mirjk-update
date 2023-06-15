@@ -1,4 +1,4 @@
-import FlatCard_vertical from "/components/FlatCard_vertical.js";
+import FlatCard_vertical from "../../components/FlatCard_vertical.js";
 
 export default function flatSimilar() {
     var html = `
@@ -21,8 +21,10 @@ export default function flatSimilar() {
                             html += `
                         </ul>
                     </div>
-                    <div class="splide__arrows slider-arrows">
+                    <div class="splide__arrows slider-arrows left">
                         <button class="splide__arrow splide__arrow--prev" type="button"><i class="icon arrow-left"></i></button>
+                    </div>
+                     <div class="splide__arrows slider-arrows right">
                         <button class="splide__arrow splide__arrow--next" type="button"><i class="icon arrow-right"></i></button>
                     </div>
                 </div>
@@ -42,11 +44,12 @@ export default function flatSimilar() {
         gap: 40,
         pagination: false,
         breakpoints: {
-            1530: {
+            1580: {
                 perPage: 3,
             },
             600: {
                 gap: 16,
+                perPage: 2,
             },
             400: {
                 perPage: 1,

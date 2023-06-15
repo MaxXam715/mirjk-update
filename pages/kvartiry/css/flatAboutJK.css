@@ -388,7 +388,7 @@
 }
 
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 911px) {
     .G-about-jk .top-row {
         display: flex;
         justify-content: space-between;
@@ -408,12 +408,16 @@
     .G-about-jk .top-row .right-side {
         flex-basis: auto;
     }
+
+    .G-about-jk .top-row .right-side .description {
+        max-height: 242px;
+    }
 }
 
 
-/* ----------------------------------*/
-/* Стили для переключателей, появляющихся только на мобильной версии*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+    /* ----------------------------------*/
+    /* Стили для переключателей, появляющихся только на мобильной версии*/
     .G-about-jk .G-container {
         padding: 0;
     }
@@ -444,7 +448,7 @@
         padding-right: 24px;
         margin-right: -24px;
         padding-bottom: 10px;
-        margin-bottom: -20px;
+        margin-bottom: -15px;
     }
 
     .P-tab-slider .btn-tab {
@@ -470,8 +474,45 @@
         background-color: var(--blue);
         color: #FFFFFF;
     }
+
+    /* ----------------------------------*/
+    /*    splider style*/
+    .G-about-jk .features .splide-wrapper {
+
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .G-about-jk .features .splide-wrapper .splide__slide {
+        aspect-ratio: unset;
+        width: 100%;
+    }
+
+    .G-about-jk .features .splide-wrapper .splide__slide .slide-photo {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .G-about-jk .features .slider-arrows {
+        display: none;
+    }
+
+    .G-about-jk .features .splide__pagination__page {
+        margin: 4px;
+    }
+
+    .G-about-jk .features .splide__pagination__page.is-active {
+        background-color: #FFFFFF;
+        opacity: 1;
+        border-radius: 3px;
+        transform: scale(1.7, 1.1);
+    }
+
+    /*   end  splider style*/
+
 }
-/* ----------------------------------*/
 
 @media screen and (max-width: 600px) {
     .G-about-jk {
@@ -500,10 +541,8 @@
         -webkit-line-clamp: 11;
         -webkit-box-orient: vertical;
         white-space: normal;
-
-        max-height: 343px;
-
-        transition: max-height 0.5s ease-in-out,  -webkit-box-orient 0.5s ease-in-out;
+        /*max-height: 242px;*/
+        transition: max-height 0.5s ease-in-out, -webkit-box-orient 0.5s ease-in-out;
     }
 
     .G-about-jk .top-row .right-side .text-wrapper.active .description {
@@ -515,7 +554,6 @@
         white-space: unset;
         max-height: 1000px;
     }
-
 
     .P-tab-slider {
         display: flex;
@@ -538,33 +576,13 @@
     }
 
     /*    splider style*/
+    .G-about-jk .features .splide-wrapper {
+        border-radius: 0;
+    }
+
     .G-about-jk .features .splide-wrapper .splide__slide {
         aspect-ratio: 15/16;
         width: 100%;
-        border-radius: 0;
-        overflow: hidden;
-    }
-
-    .G-about-jk .features .splide-wrapper .splide__slide .slide-photo {
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    .G-about-jk .features .slider-arrows  {
-        display: none;
-    }
-
-    .G-about-jk .features .splide__pagination__page {
-        margin: 4px;
-    }
-
-    .G-about-jk .features .splide__pagination__page.is-active {
-        background-color: #FFFFFF;
-        opacity: 1;
-        border-radius: 3px;
-        transform: scale(1.7, 1.1);
     }
 
     /*   end  splider style*/

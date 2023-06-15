@@ -446,7 +446,7 @@
         font-size: 14px;
         line-height: 1;
         letter-spacing: 0.04em;
-        color: #3D81DA;
+        color: var(--blue);
         /*margin-bottom: 20px;*/
         margin-top: 20px;
         cursor: pointer;

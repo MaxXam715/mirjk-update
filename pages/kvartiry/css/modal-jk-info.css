@@ -1,5 +1,3 @@
-
-
 .modal-jk-info.fm-modal .container-body .modal-header {
     padding: 0;
     border-bottom: none;
@@ -16,10 +14,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 .modal-jk-info.fm-modal .container-body {
 
@@ -73,9 +67,6 @@
 .modal-jk-info.fm-modal .container-body .modal-content {
     padding: 0;
 }
-
-
-
 
 
 /*styles for splider*/
@@ -153,7 +144,17 @@
     border-radius: 3px;
     transform: scale(1.7, 1.1);
 }
-
-
-
 /*end styles for splider*/
+
+
+@media screen and (max-width: 1200px){
+    .modal-jk-info.fm-modal {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .modal-jk-info.fm-modal {
+        padding: 20px;
+    }
+}

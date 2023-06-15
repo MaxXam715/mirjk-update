@@ -7,7 +7,7 @@ export default function flatInfoParams() {
             </h2>
             <!-- Адрес -->
             <div class="address-row">
-                <div class="address">
+                <div class="G-address address">
                     <div class="location">
                         <div class="place">
                             <!--                                    <i class="icon location-icon"></i>-->
@@ -20,7 +20,7 @@ export default function flatInfoParams() {
                 <!--                        <div class="address-icon"><img src="/images/address-icon.svg" alt=""></div>-->
             </div>
         
-            <div class="price-wrapper">
+            <div class="G-prices price-wrapper">
                 <div class="price-row">
                     <p class="full-price">14 085 970 <span class="rub">₽</span></p>
                     <p class="price-mortgage">В ипотеку от 105 072 ₽/мес.</p>
