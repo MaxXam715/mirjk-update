@@ -1,3 +1,5 @@
+import JkCard from "/components/JkCard.js";
+
 export default function CatalogJK() {
 
     const getDataJKs = ajaxRequest({url: 'https://mirjk.planetarf.ru/api/restapiv1.php', method: 'GET', data: {method: 'getJKs'}})['data'],
@@ -13,7 +15,7 @@ export default function CatalogJK() {
         <div class="G-container">
             <div class="P-cards-jk-wrapper">`;
                 for (var i in list_jks) {
-
+                    html += JkCard();
                 }
                 html += `
             </div>
