@@ -15,7 +15,7 @@ export default function CatalogJK() {
         <div class="G-container">
             <div class="P-cards-jk-wrapper">`;
                 for (var i in list_jks) {
-                    html += JkCard();
+                    html += JkCard(list_jks[i]);
                 }
                 html += `
             </div>
