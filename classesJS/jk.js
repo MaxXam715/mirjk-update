@@ -8,7 +8,7 @@ export default class JK {
     getJks(params) {
         var filter = params.filter;
         $.post('https://mirjk.planetarf.ru/api/site.php', {method: 'getJks', filter: JSON.stringify(filter)}, (res) => {
-            console.log('res', res);
+            // console.log('res', res);
             for (var i in res.data) {
                 params.container.append(this.tgb_tmpl(res.data[i]));
             }

@@ -38,7 +38,6 @@ var titlePage = document.title,
     filter_metro = 0;
 
 
-
 // ленивая загрузка изображений
 // html.find("img[src=''].lazyload").lazyload({rootMargin: "500px"});
 

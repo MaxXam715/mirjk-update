@@ -1,4 +1,36 @@
 export default function flatsCatalog() {
+
+
+
+    var dataGetFlat = function () {
+
+        var filter_json = getFilterParamsfromUrl();
+
+        if(filter_json.page == undefined) filter_json.page = 1;
+        if(filter_json.cost_min!=undefined) filter_json.cost_min *= 1000000;
+        if(filter_json.cost_max!=undefined) filter_json.cost_max *= 1000000;
+        if(filter_json.mort_min!=undefined) filter_json.mort_min *= 1000;
+        if(filter_json.mort_max!=undefined) filter_json.mort_max *= 1000;
+
+        filter_json.saleStatus = 1;
+        filter_json.jk_verified = 1;
+
+        var data = ajaxRequest({
+            url: 'https://mirjk.planetarf.ru/api/restapiv1.php',
+            method: 'GET',
+            data: {
+                method: 'getPlaces',
+                filter: JSON.stringify(filter_json)
+            }
+        });
+        return data;
+    }
+
+    console.log('Квартиры', dataGetFlat());
+
+
+
+
     var html = `
     <section id="homecatalog_sec" class="P-section-flats">
         <div class="G-container">
