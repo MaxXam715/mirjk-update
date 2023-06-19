@@ -6,9 +6,9 @@ export default function CatalogJK() {
             list_jks = getDataJKs.jks,
           count_jks = getDataJKs.count;
 
-    console.log('Список ЖК', getDataJKs);
-    console.log('Кол-во', count_jks);
-    console.log('Лист', list_jks);
+    // console.log('Список ЖК', getDataJKs);
+    // console.log('Кол-во', count_jks);
+    // console.log('Лист', list_jks);
 
     var html = `
     <section class="G-section-catalog-jk">

@@ -8,7 +8,7 @@ var pathname = document.location.pathname,
 
 
 if((paths.length == 3 && paths[1] == "novostroyki") || (paths.length == 4 && paths[1] == "novostroyki" && paths[3] == "")){
-    page = "jk";
+    page = "project-detail";
 }
 
 if (routes[page] != undefined) {
