@@ -6,16 +6,16 @@ export default function CatalogJK() {
             list_jks = getDataJKs.jks,
           count_jks = getDataJKs.count;
 
-    console.log('Список ЖК', getDataJKs);
-    console.log('Кол-во', count_jks);
-    console.log('Лист', list_jks);
+    // console.log('Список ЖК', getDataJKs);
+    // console.log('Кол-во', count_jks);
+    // console.log('Лист', list_jks);
 
     var html = `
     <section class="G-section-catalog-jk">
         <div class="G-container">
             <div class="P-cards-jk-wrapper">`;
                 for (var i in list_jks) {
-                    html += JkCard();
+                    html += JkCard(list_jks[i]);
                 }
                 html += `
             </div>
