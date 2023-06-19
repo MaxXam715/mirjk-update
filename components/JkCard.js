@@ -6,9 +6,7 @@ export default function JkCard(jk) {
         nameJK = (jk.title != undefined && jk.title != '') ? jk.title : 'NaN',
         address = `${jk.city}, ${(jk.okrug != '') ? jk.okrug+',' : ''} ${jk.streetType} ${jk.street} ${jk.numType} ${jk.num}`,
         developer = (jk.hasOwnProperty('participants') && Object.keys(jk.participants).length != 0) ? jk.participants[Object.keys(jk.participants)[0]].company.title : 'NaN',
-        housingClass = (jk.class == '1') ? 'Эконом' :
-                        (jk.class == '2') ? 'Бизнес' :
-                        (jk.class == '3') ? 'Элитное' : 'NaN';
+        housingClass = (jk.class == '1') ? 'Эконом' : (jk.class == '2') ? 'Бизнес' : (jk.class == '3') ? 'Элитное' : 'NaN';
 
 
     var html = `
@@ -22,16 +20,6 @@ export default function JkCard(jk) {
         </div>
         <div class="jk-info">`;
             if (jk.hasOwnProperty('groups') && Object.keys(jk.groups).length != 0) {
-
-                // var arrayRooms = [],
-                //     object = $.extend({}, object1, object2);
-
-                for (var i in jk.groups.rooms) {
-                    console.log('komnat', i)
-                }
-
-                console.log('----------------')
-
             html += `
             <div class="info-toggle" style="">
                 <div class="offers">

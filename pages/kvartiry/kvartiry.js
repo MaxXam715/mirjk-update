@@ -5,9 +5,12 @@ import flatAboutJK from "./flatAboutJK.js";
 import flatLocationJK from "./flatLocationJK.js";
 import flatSimilar from "./flatSimilar.js";
 
-const dataFlat = ajaxRequest({url: 'https://mirjk.planetarf.ru/api/restapiv1.php', method: 'GET', data: {method: 'getPlace', id: '219557'}})['data'];
 
 export default function kvartiry() {
+
+    const dataFlat = ajaxRequest({url: 'https://mirjk.planetarf.ru/api/restapiv1.php', method: 'GET', data: {method: 'getPlace', id: '219557'}})['data'];
+    console.log('dataFlat', dataFlat)
+
     flatDetailInfo(dataFlat); // вывод планировки с галереей и параметров
     MortgageCalculator({append: '#app'}); // ипотечный калькулятор
     flatAboutJK(dataFlat);    // Описание ЖК

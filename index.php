@@ -82,9 +82,11 @@ if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], "mirjk.ru") !==
     <script src="/plugins/jquery-3.7.0.min.js"></script>
     <script src='/assets/js/scripts.js?v=<?=$v?>'></script>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=64b5ada5-93cf-456c-830c-e3370638a1ee&lang=ru_RU"></script>
+
     <?php
     if ( $_SERVER['REQUEST_URI'] == '/novostroyki-na-karte' || $_SERVER['REQUEST_URI'] == '/kvartiry' || $_SERVER['REQUEST_URI'] == '/novostroyki' ) { ?>
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=64b5ada5-93cf-456c-830c-e3370638a1ee&lang=ru_RU"></script> <?
+         <?
     } ?>
 
 </body>

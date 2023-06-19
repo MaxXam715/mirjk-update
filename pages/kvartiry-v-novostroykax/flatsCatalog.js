@@ -27,13 +27,12 @@ export default function flatsCatalog() {
         });
         return data;
     }
-    var allData = dataGetFlat().data,
-        dataFlats= dataGetFlat().data.places,
-        dataJks= dataGetFlat().data.jks;
 
-    // console.log('dataGetFlat', dataGetFlat)
+    var allDataFlats = dataGetFlat().data, // получаем всю информацию
+        dataFlats = dataGetFlat().data.places, // получаем список квартир
+        dataJK = dataGetFlat().data.jks; // получаем список ЖК
 
-    var html = `
+   var html = `
     <section class="P-section-flats">
         <div class="G-container">
             <div class="items items_flat"></div>
@@ -42,7 +41,8 @@ export default function flatsCatalog() {
     html = $(html);
     $('#app').append(html);
 
-    outputTmplFlat(dataFlats, allData);
+    // выводим квартиры
+    outputTmplFlat(dataFlats, allDataFlats);
 
 
     $(".recommended-block li").click(function(){
@@ -71,10 +71,9 @@ export default function flatsCatalog() {
     });
 }
 
-function outputTmplFlat(flats, allData) {
+function outputTmplFlat(flats, allDataFlats) {
     $('.P-section-flats .items_flat').html('');
     for (var item in flats) {
-
-        $('.P-section-flats .items_flat').append(FlatCard_horizontal(flats[item], allData));
+        $('.P-section-flats .items_flat').append(FlatCard_horizontal(flats[item], allDataFlats));
     }
 }

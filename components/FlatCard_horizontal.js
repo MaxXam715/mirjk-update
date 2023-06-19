@@ -35,7 +35,7 @@ export default function FlatCard_horizontal(flat, allData) {
             <!--    ниже только на планшете-->
             <div class="developer-info tab-mob">
                 <span class="subtitle">Застройщик</span>
-                <h3 class="title">brand.title</h3>
+                <h3 class="title">${developer}</h3>
             </div>
             <!--  выше только на планшете-->
             <a href="/kvartiry?id=${flat.id}" class="info-header href" target="blank" href="place_url">${rooms_title}, ${flat.allSquare} м², ${flat.floor}/${floorOf} этаж </a>
