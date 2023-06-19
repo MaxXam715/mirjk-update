@@ -1,4 +1,4 @@
-export default function flatInfoParams() {
+export default function flatInfoParams(flat) {
     var html = `
     <div class="right-side">
         <div class="flat-about">

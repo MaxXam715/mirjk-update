@@ -1,4 +1,5 @@
 @import "/assets/css/components/G-flat-list.css";
+@import "/assets/css/components/FlatCard_horizontal.css";
 
 .P-section-flats .items {
     grid-gap: 40px;

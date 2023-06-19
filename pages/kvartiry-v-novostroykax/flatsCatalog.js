@@ -27,9 +27,11 @@ export default function flatsCatalog() {
         });
         return data;
     }
-    dataGetFlat = dataGetFlat().data.places;
-    console.log('dataGetFlat', dataGetFlat)
+    var allData = dataGetFlat().data,
+        dataFlats= dataGetFlat().data.places,
+        dataJks= dataGetFlat().data.jks;
 
+    // console.log('dataGetFlat', dataGetFlat)
 
     var html = `
     <section class="P-section-flats">
@@ -40,7 +42,7 @@ export default function flatsCatalog() {
     html = $(html);
     $('#app').append(html);
 
-    outputTmplFlat(dataGetFlat);
+    outputTmplFlat(dataFlats, allData);
 
 
     $(".recommended-block li").click(function(){
@@ -69,9 +71,10 @@ export default function flatsCatalog() {
     });
 }
 
-function outputTmplFlat(flat) {
+function outputTmplFlat(flats, allData) {
     $('.P-section-flats .items_flat').html('');
-    for (var item in flat) {
-        $('.P-section-flats .items_flat').append(FlatCard_horizontal(flat[item]));
+    for (var item in flats) {
+
+        $('.P-section-flats .items_flat').append(FlatCard_horizontal(flats[item], allData));
     }
 }
