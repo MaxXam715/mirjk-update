@@ -331,6 +331,8 @@
     display: inline-block;
     width: 100%;
     padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
 
     background-color: #FFFFFF;
     font-weight: 400;
@@ -340,6 +342,14 @@
     color: #20313B;
 
     position: relative;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    transition: color 0.3s ease;
 }
 
 .G-card-jk .jk-info .developer:before {

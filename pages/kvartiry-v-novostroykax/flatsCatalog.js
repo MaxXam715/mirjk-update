@@ -131,7 +131,7 @@ function JkFlatTmplPlaneta(data) {
         house = data.houses[place.id_house];
         mort_cost = mortgageCalculate({cost:place['AgentCost']});
         mort_cost = mort_cost.m_pay;
-
+        console.log(place);
         // console.log('jkl', jk);
 
         var brand = {};
@@ -191,7 +191,7 @@ function JkFlatTmplPlaneta(data) {
                 <!--НИЖЕ  адрес,метро, время до метро -->
                 ${addrTmpl(jk['address'], jk['metros'])}
                 <!--ВЫШЕ  адрес,метро, время до метро -->
-                <div class="price-wrapper">
+                <div class="G-prices price-wrapper">
                     <div class="price-row">
                         <p class="full-price">${numberWithSpaces(Math.round(place.AgentCost))} ₽</p>
                         <p class="price-mortgage">В ипотеку от ${numberWithSpaces(Math.round(mort_cost))} ₽/мес.</p>
